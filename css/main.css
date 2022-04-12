@@ -11,7 +11,8 @@
     }
     
     .menu {
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr 2fr;
     }
     
     .menu a {
@@ -162,10 +163,7 @@
         .menu {
             display: grid;
             grid-template-rows: 1fr 1fr;
-        }
-        .menu li {
-            padding: 5px;
-            margin-left: 10px;
+            grid-template-columns: 1fr;
         }
         .contenedorLogo {
             padding-left: 20px;
@@ -173,12 +171,42 @@
             flex-direction: row;
             justify-self: center;
         }
+        .pie {
+            top: 200px;
+        }
+        .collection {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 0.5fr 6fr 1fr;
+            background-color: #F8CEEC;
+            width: 100%;
+        }
+        .collectionNew {
+            grid-column: 1;
+            grid-row: 1;
+            justify-content: center;
+            text-align: center;
+        }
+        .img {
+            grid-column: 1;
+            grid-row: 2 / 3;
+            margin-top: 50px;
+        }
         .new {
             display: flex;
             flex-direction: column;
-            margin-bottom: 10px;
+            align-items: center;
+            gap: 30px;
         }
-        .pie {
-            top: 200px;
+        .img1,
+        .img2,
+        .img3 {
+            width: 90%;
+        }
+        .contenedor {
+            grid-column: 1;
+            grid-row: 3 / 4;
+            text-align: center;
+            margin-top: 30px;
         }
     }
