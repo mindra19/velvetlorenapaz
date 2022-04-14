@@ -1,216 +1,238 @@
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Quicksand', sans-serif;
-    }
-    
-    body {
-        background-color: #f8ceec;
-        background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
-    }
-    
-    .menu {
-        display: grid;
-        grid-template-columns: 1fr 3fr 1fr 2fr;
-    }
-    
-    .opciones:hover {
-        transform: scale(1.1);
-    }
-    
-    .menu a {
-        text-transform: uppercase;
-        text-decoration: none;
-        color: black;
-        font-size: 18px;
-    }
-    
-    .menu li {
-        display: inline-block;
-        padding-top: 35px;
-        border-radius: 3px;
-        background-color: #f8ceec3c;
-        padding: 8px;
-        margin: 5px;
-        margin-top: 25px;
-    }
-    
-    .logo {
-        width: 80%;
-    }
-    
-    .pie {
-        text-decoration: none;
-        display: inline-block;
-        position: fixed;
-        top: 110px;
-        right: 0px;
-        margin: 10px;
-        padding: 5px;
-        color: black;
-        background-color: #bfa3a3ad;
-        border-radius: 5px;
-    }
-    /*index nueva coleccion*/
-    
-    .collection {
-        display: grid;
-        grid-template-columns: 5% 30% 30% 30% 5%;
-        grid-template-rows: 20% 75% 25%;
-        background-color: #F8CEEC;
-        padding-bottom: 30px;
-    }
-    
-    .collectionNew {
-        grid-column: 3 / 4;
-        grid-row: 1;
-        justify-content: center;
-        text-align: center;
-    }
-    
-    .tituloNew {
-        text-transform: uppercase;
-        font-family: 'Barlow Semi Condensed', 'sans-serif';
-        font-size: 30px;
-        color: rgb(24, 23, 23);
-        margin-top: 80px;
-        padding-bottom: 50px;
-    }
-    
-    .img {
-        grid-column: 2 / 5;
-        grid-row: 2 / 3;
-        margin-top: 50px;
-    }
-    
-    .new {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    
-    .img1,
-    .img2,
-    .img3 {
-        width: 30%;
-    }
-    
-    .contenedor {
-        grid-column: 3 / 4;
-        grid-row: 3 / 4;
-        text-align: center;
-    }
-    
-    .more {
-        font-family: 'Barlow Semi Condensed', 'sans-serif';
-        font-size: 22px;
-        color: black;
-        text-decoration: underline 1px;
-        font-style: oblique;
-    }
-    /*contacto html*/
-    
-    .form {
-        background-color: #f8ceec;
-        background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
-        padding: 50px;
-    }
-    
-    .form li {
-        list-style: none;
-        padding: 5px;
-        margin: 5px;
-    }
-    
-    .form label {
-        font-size: 20px;
-        text-transform: uppercase;
-        padding-right: 5px;
-        color: black;
-    }
-    
-    .text {
-        display: flex;
-        margin-top: 5px;
-        padding: 10px;
-        width: 400px;
-        border: black 1px solid;
-        color: black;
-    }
-    
-    .submit {
-        padding: 15px 30px;
-        text-transform: uppercase;
-        background-color: black;
-        color: white;
-        border: black 1px solid;
-        font-size: 15px;
-    }
-    /*prendas html*/
-    
-    .contenedorPrendas {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
-        row-gap: 30px;
-        margin-top: 60px;
-    }
-    
-    footer {
-        margin-top: 100vh;
-        font-style: inherit;
-    }
-    /*media queries*/
-    
-    @media only screen and (max-width: 480px) {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Quicksand', sans-serif;
+        }
+        
+        body {
+            background-color: #f8ceec;
+            background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+        }
+        
         .menu {
             display: grid;
-            grid-template-rows: 1fr 1fr;
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr 3fr 1fr 2fr;
         }
-        .contenedorLogo {
-            padding-left: 20px;
-            display: flex;
-            flex-direction: row;
-            justify-self: center;
+        
+        .opciones:hover {
+            transform: scale(1.1);
         }
+        
+        .menu a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+        
+        .menu li {
+            display: inline-block;
+            padding-top: 35px;
+            border-radius: 3px;
+            background-color: #f8ceec3c;
+            padding: 8px;
+            margin: 5px;
+            margin-top: 25px;
+        }
+        
+        .logo {
+            width: 80%;
+        }
+        
         .pie {
-            top: 200px;
+            text-decoration: none;
+            display: inline-block;
+            position: fixed;
+            top: 110px;
+            right: 0px;
+            margin: 10px;
+            padding: 5px;
+            color: black;
+            background-color: #bfa3a3ad;
+            border-radius: 5px;
         }
+        /*index nueva coleccion*/
+        
         .collection {
             display: grid;
-            grid-template-columns: 100%;
-            grid-template-rows: 0.5fr 6fr 1fr;
+            grid-template-columns: 5% 30% 30% 30% 5%;
+            grid-template-rows: 20% 75% 25%;
             background-color: #F8CEEC;
-            width: 100%;
+            padding-bottom: 30px;
         }
+        
         .collectionNew {
-            grid-column: 1;
+            grid-column: 3 / 4;
             grid-row: 1;
             justify-content: center;
             text-align: center;
         }
+        
+        .tituloNew {
+            text-transform: uppercase;
+            font-family: 'Barlow Semi Condensed', 'sans-serif';
+            font-size: 30px;
+            color: rgb(24, 23, 23);
+            margin-top: 80px;
+            padding-bottom: 50px;
+        }
+        
         .img {
-            grid-column: 1;
+            grid-column: 2 / 5;
             grid-row: 2 / 3;
             margin-top: 50px;
         }
+        
         .new {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 30px;
+            flex-direction: row;
+            justify-content: space-around;
         }
+        
         .img1,
         .img2,
         .img3 {
-            width: 90%;
+            width: 30%;
         }
+        
         .contenedor {
-            grid-column: 1;
+            grid-column: 3 / 4;
             grid-row: 3 / 4;
             text-align: center;
-            margin-top: 30px;
         }
-    }
+        
+        .more {
+            font-family: 'Barlow Semi Condensed', 'sans-serif';
+            font-size: 22px;
+            color: black;
+            text-decoration: underline 1px;
+            font-style: oblique;
+        }
+        /*sale html*/
+        
+        .fondoNav {
+            background-color: rgba(168, 139, 235, 0.542);
+        }
+        
+        .carruselMain {
+            margin-top: 30px;
+            margin-left: 50vh;
+        }
+        
+        .card {
+            margin-top: 100px;
+            margin-right: 25px;
+            margin-left: 22px;
+        }
+        
+        .cardN {
+            margin-top: 50px;
+            margin-right: 25px;
+            margin-left: 22px;
+        }
+        /*contacto html*/
+        
+        .form {
+            background-color: #f8ceec;
+            background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+            padding: 50px;
+        }
+        
+        .form li {
+            list-style: none;
+            padding: 5px;
+            margin: 5px;
+        }
+        
+        .form label {
+            font-size: 20px;
+            text-transform: uppercase;
+            padding-right: 5px;
+            color: black;
+        }
+        
+        .text {
+            display: flex;
+            margin-top: 5px;
+            padding: 10px;
+            width: 400px;
+            border: black 1px solid;
+            color: black;
+        }
+        
+        .submit {
+            padding: 15px 30px;
+            text-transform: uppercase;
+            background-color: black;
+            color: white;
+            border: black 1px solid;
+            font-size: 15px;
+        }
+        /*prendas html*/
+        
+        .contenedorPrendas {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            row-gap: 30px;
+            margin-top: 60px;
+        }
+        
+        footer {
+            margin-top: 100vh;
+            font-style: inherit;
+        }
+        /*media queries*/
+        
+        @media only screen and (max-width: 480px) {
+            .menu {
+                display: grid;
+                grid-template-rows: 1fr 1fr;
+                grid-template-columns: 1fr;
+            }
+            .contenedorLogo {
+                padding-left: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-self: center;
+            }
+            .pie {
+                top: 200px;
+            }
+            .collection {
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 0.5fr 6fr 1fr;
+                background-color: #F8CEEC;
+                width: 100%;
+            }
+            .collectionNew {
+                grid-column: 1;
+                grid-row: 1;
+                justify-content: center;
+                text-align: center;
+            }
+            .img {
+                grid-column: 1;
+                grid-row: 2 / 3;
+                margin-top: 50px;
+            }
+            .new {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+            }
+            .img1,
+            .img2,
+            .img3 {
+                width: 90%;
+            }
+            .contenedor {
+                grid-column: 1;
+                grid-row: 3 / 4;
+                text-align: center;
+                margin-top: 30px;
+            }
+        }
