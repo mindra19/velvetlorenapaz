@@ -29,10 +29,34 @@ $submit: (
     margin-top: 60px; 
 }
 
+$submit: (
+        pad-submit: 15px 30px,
+        t-transform-submit: uppercase,
+        bg-submit: black,
+        color-submit: white,
+        border-submit: black 1px solid,
+        fsize-submit: 15px,
+);
+
+@mixin nav {
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    margin: 5px;
+    padding: 0px;
+
+}
+%alineacion{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    row-gap: 30px;
+    margin-top: 60px; 
+}
+
 body {
     background-color: $color-form;
     background-image: $color-gradient;
-
+   
     .nav-link{
         @include nav;
     }
@@ -56,7 +80,6 @@ body {
     grid-template-rows: 20% 75% 25%;
     background-color: #F8CEEC;
     padding-bottom: 30px;
-   
     .collectionNew {
         grid-column: 3 / 4;
         grid-row: 1;
@@ -102,14 +125,13 @@ body {
             text-decoration: underline 1px;
             font-style: oblique;
             font-weight:800;
+            
         }
         .more:hover{
             color: black;
         }
     }
 }
-//nuevo
-    
   //sale
     .carrusel{
         background-color: rgba(255, 255, 255, 0.396);

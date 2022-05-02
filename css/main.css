@@ -130,6 +130,8 @@ body {
     margin-top: 200px; }
   body .btnicon {
     border-radius: 50%; }
+  body .fondoFooter {
+    background-color: black; }
   @media only screen and (max-width: 480px) {
     body .pie {
       top: 200px; } }
