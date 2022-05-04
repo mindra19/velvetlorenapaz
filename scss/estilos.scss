@@ -1,6 +1,6 @@
 //contacto html
 $color-form: #f8ceec;
-$color-pie: #bfa3a3ad;
+$color-pie: black;
 $color-gradient: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
 $color-gradient2:linear-gradient(315deg, #f8ceec 0%, #d3cce08d 74%);
 
@@ -45,18 +45,11 @@ $submit: (
     padding: 0px;
 
 }
-%alineacion{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    row-gap: 30px;
-    margin-top: 60px; 
-}
+
 
 body {
     background-color: $color-form;
     background-image: $color-gradient;
-   
     .nav-link{
         @include nav;
     }
@@ -64,56 +57,56 @@ body {
         text-decoration: none;
         display: inline-block;
         position: fixed;
-        top: 110px;
+        top: 115px;
         right: 0px;
         margin: 10px;
         padding: 5px;
-        color: black;
         background-color: $color-pie;
+        color: white;
         border-radius: 5px;
     }
-  /*index nueva coleccion*/
-        
-  .collection {
-    display: grid;
-    grid-template-columns: 5% 30% 30% 30% 5%;
-    grid-template-rows: 20% 75% 25%;
-    background-color: #F8CEEC;
-    padding-bottom: 30px;
-    .collectionNew {
-        grid-column: 3 / 4;
-        grid-row: 1;
-        justify-content: center;
-        text-align: center;
-        .tituloNew {
-            text-transform: uppercase;
-            font-family: 'Barlow Semi Condensed', 'sans-serif';
-            font-size: 30px;
-            color: rgb(24, 23, 23);
-            margin-top: 80px;
-            padding-bottom: 50px;
-            font-weight: bolder;
+    /*index nueva coleccion*/  
+    .collection {
+        display: grid;
+        grid-template-columns: 5% 30% 30% 30% 5%;
+        grid-template-rows: 20% 75% 25%;
+        background-color: #F8CEEC;
+        padding-bottom: 30px;
+        .collectionNew {
+            grid-column: 3 / 4;
+            grid-row: 1;
+            justify-content: center;
+            text-align: center;
+            .tituloNew {
+                text-transform: uppercase;
+                font-family: 'Barlow Semi Condensed', 'sans-serif';
+                font-size: 30px;
+                color: rgb(24, 23, 23);
+                margin-top: 80px;
+                padding-bottom: 50px;
+                font-weight: bolder;
+            }
         }
-    }
-    .img {
-        grid-column: 2 / 5;
-        grid-row: 2 / 3;
-        margin-top: 50px; 
-        .new {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            .imgIndex{
-                width: 30%;
-                box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-            }
-            .imgIndex:hover{
-                transition: 0,05s;
-                transform:translate(0, -10px);
-                
-            }
-        }  
-    }
+        .img {
+            grid-column: 2 / 5;
+            grid-row: 2 / 3;
+            margin-top: 50px; 
+            .new {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                .imgIndex{
+                    width: 30%;
+                    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+                }
+                .imgIndex:hover{
+                    transition: 0,05s;
+                    transform:translate(0, -10px);
+                    
+                }
+            }  
+        }
+    }    
     .contenedor {
         grid-column: 3 / 4;
         grid-row: 3 / 4;
@@ -131,17 +124,15 @@ body {
             color: black;
         }
     }
-}
   //sale
     .carrusel{
         background-color: rgba(255, 255, 255, 0.396);
         padding-bottom: 25px;
+        .carruselMain {
+            margin-top: 30px;
+            margin-left: 50vh;
+        }
     }
-    .carruselMain {
-        margin-top: 30px;
-        margin-left: 50vh;
-    }
-
     .card {
         margin-top: 100px;
         margin-right: 25px;
@@ -168,7 +159,6 @@ body {
                 font-size: 20px;
                 margin:0px;
                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-                
             }
         }
     }
@@ -218,15 +208,140 @@ body {
     .btnicon{
         border-radius: 50%;
     }
-   
-   //media queries
+    //media queries
     @media only screen and (max-width: 480px){
-        .pie {
+        .pie{
             top: 200px;
+            right: 15px;
+            margin:3px;
+            padding:5px;
+            background-color:black;
+            color:white;
+        }
+        .pieSalediv{
+            text-decoration: none;
+            display: inline-block;
+            position: fixed;
+            top: 200px;
+            right: 45px;
+           
+        }
+        .pieSale{
+            text-decoration: none;
+            margin:3px;
+            padding: 5px;
+            background-color:black;
+            color:white;
+            border-radius: 5px;
+        }
+        .collection {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            background-color: #F8CEEC;
+            padding-bottom: 30px;
+            .img {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+                margin-top: 50px; 
+                .new {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    row-gap: 2rem;
+                    .imgIndex{
+                        width: 50%;
+                        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+                    }
+                }
+            }
+            .contenedor {
+                grid: column 2/3;
+                grid-row: 3 / 4;
+                text-align: center;
+                margin: 2rem;
+            }       
+        } 
+        .nuevo{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        .nuevoCard{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .carrusel{
+            .carsbotton-right{
+                display: block;
+                right: 150px;
+            }
+            .carsbotton-left{
+                display:block;
+                left: -150px;
+            }
+            .carruselDiv{
+                display:block;
+                right: 150px;  
+            } 
+        }
+        .saleRow{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            .cardS{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        .contenedorPrendas{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0px;
+            row-gap: 0px;
+            .imagen{
+                box-shadow: #26394d 0px 20px 10px -10px;
+                transform: scale(0.60);
+                margin-bottom:-50px;
+                margin-top:-50px;
+            }
+        }
+        .form{ 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0px;
+            padding: 0px;
+            .gridForm{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 2fr 1fr;
+                margin-top: 50px;
+                padding-left: 10px;
+                li{
+                    list-style: none;
+                    padding: 5px;
+                    margin: 5px;
+                    label{
+                        font-size: 17px;
+                        text-transform: uppercase;
+                        padding-right: 5px;
+                        color: black;
+                    }
+                    .text {
+                        display: flex;
+                        margin-top: 5px;
+                        padding: 10px;
+                        width: 300px;
+                        border: black 1px solid;
+                        color: black;
+                    }
+                }
+            }
         }
     }
-}
+} 
 
- 
- 
- 

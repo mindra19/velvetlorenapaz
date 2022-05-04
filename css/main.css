@@ -18,12 +18,12 @@ body {
     text-decoration: none;
     display: inline-block;
     position: fixed;
-    top: 110px;
+    top: 115px;
     right: 0px;
     margin: 10px;
     padding: 5px;
-    color: black;
-    background-color: #bfa3a3ad;
+    background-color: black;
+    color: white;
     border-radius: 5px; }
   body .collection {
     display: grid;
@@ -58,25 +58,25 @@ body {
         body .collection .img .new .imgIndex:hover {
           transition: 0,05s;
           transform: translate(0, -10px); }
-    body .collection .contenedor {
-      grid-column: 3 / 4;
-      grid-row: 3 / 4;
-      text-align: center; }
-      body .collection .contenedor .more {
-        font-family: 'Barlow Semi Condensed', 'sans-serif';
-        font-size: 22px;
-        color: black;
-        text-decoration: underline 1px;
-        font-style: oblique;
-        font-weight: 800; }
-      body .collection .contenedor .more:hover {
-        color: black; }
+  body .contenedor {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    text-align: center; }
+    body .contenedor .more {
+      font-family: 'Barlow Semi Condensed', 'sans-serif';
+      font-size: 22px;
+      color: black;
+      text-decoration: underline 1px;
+      font-style: oblique;
+      font-weight: 800; }
+    body .contenedor .more:hover {
+      color: black; }
   body .carrusel {
     background-color: rgba(255, 255, 255, 0.396);
     padding-bottom: 25px; }
-  body .carruselMain {
-    margin-top: 30px;
-    margin-left: 50vh; }
+    body .carrusel .carruselMain {
+      margin-top: 30px;
+      margin-left: 50vh; }
   body .card {
     margin-top: 100px;
     margin-right: 25px;
@@ -130,8 +130,111 @@ body {
     margin-top: 200px; }
   body .btnicon {
     border-radius: 50%; }
-  body .fondoFooter {
-    background-color: black; }
   @media only screen and (max-width: 480px) {
     body .pie {
-      top: 200px; } }
+      top: 200px;
+      right: 15px;
+      margin: 3px;
+      padding: 5px;
+      background-color: black;
+      color: white; }
+    body .pieSalediv {
+      text-decoration: none;
+      display: inline-block;
+      position: fixed;
+      top: 200px;
+      right: 45px; }
+    body .pieSale {
+      text-decoration: none;
+      margin: 3px;
+      padding: 5px;
+      background-color: black;
+      color: white;
+      border-radius: 5px; }
+    body .collection {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      background-color: #F8CEEC;
+      padding-bottom: 30px; }
+      body .collection .img {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin-top: 50px; }
+        body .collection .img .new {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          row-gap: 2rem; }
+          body .collection .img .new .imgIndex {
+            width: 50%;
+            box-shadow: #26394d 0px 20px 30px -10px; }
+      body .collection .contenedor {
+        grid: column 2/3;
+        grid-row: 3 / 4;
+        text-align: center;
+        margin: 2rem; }
+    body .nuevo {
+      display: grid;
+      grid-template-columns: 1fr; }
+    body .nuevoCard {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    body .carrusel .carsbotton-right {
+      display: block;
+      right: 150px; }
+    body .carrusel .carsbotton-left {
+      display: block;
+      left: -150px; }
+    body .carrusel .carruselDiv {
+      display: block;
+      right: 150px; }
+    body .saleRow {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr; }
+      body .saleRow .cardS {
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+    body .contenedorPrendas {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0px;
+      row-gap: 0px; }
+      body .contenedorPrendas .imagen {
+        box-shadow: #26394d 0px 20px 10px -10px;
+        transform: scale(0.6);
+        margin-bottom: -50px;
+        margin-top: -50px; }
+    body .form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0px;
+      padding: 0px; }
+      body .form .gridForm {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 2fr 1fr;
+        margin-top: 50px;
+        padding-left: 10px; }
+        body .form .gridForm li {
+          list-style: none;
+          padding: 5px;
+          margin: 5px; }
+          body .form .gridForm li label {
+            font-size: 17px;
+            text-transform: uppercase;
+            padding-right: 5px;
+            color: black; }
+          body .form .gridForm li .text {
+            display: flex;
+            margin-top: 5px;
+            padding: 10px;
+            width: 300px;
+            border: black 1px solid;
+            color: black; } }

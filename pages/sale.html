@@ -70,40 +70,39 @@
 
     </header>
     <main class="row carrusel">
-        <div id="carouselExampleControls" class="carousel slide col-6 carruselMain" data-bs-ride="carousel" data-interval="3" s>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="../img/girl-with-red-hat-.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/sniejana.jpg" class="d-block w-100 h-80" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="../img/rocknwool.jpg" class="d-block w-100" alt="...">
-                </div>
+        <div id="carouselExampleControls" class="carruselMain carousel slide col-6" data-bs-ride="carousel" data-interval="3">
+            <div class="carousel-inner carruselDiv">
+              <div class="carousel-item active">
+                <img src="../img/girl-with-red-hat-.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/sniejana.jpg" class="d-block w-100 h-80" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../img/rocknwool.jpg" class="d-block w-100" alt="...">
+              </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <button class="carousel-control-prev carsbotton-left" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <button class="carousel-control-next carsbotton-right" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
         </div>
 
     </main>
-    <section class="container-fluid">
-
-        <div class="row">
-            <div class="card col-1" style="width: 18rem;">
-                <img src="../img/haryo-setyadi-acn5ERAeSb4-unsplash.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Producto</h5>
-                    <p class="card-text">$ 500</p>
-                    <a href="#" class="btn btn-primary">Comprar</a>
-                </div>
-            </div>
+    <section class="container-fluid saleRow">
+      <div class="row cardS">
+        <div class="card col-1" style="width: 18rem;">
+          <img src="../img/haryo-setyadi-acn5ERAeSb4-unsplash.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Producto</h5>
+            <p class="card-text">$ 500</p>
+            <a href="#" class="btn btn-primary">Comprar</a>
+          </div>
+        </div>
             <div class="card col-1" style="width: 18rem;">
                 <img src="../img/milada-vigerova-p8Drpg_duLw-unsplash.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
@@ -129,14 +128,11 @@
                 </div>
             </div>
         </div>
-
-
     </section>
     <section class="container">
-        <div>
-            <a href="#irFooter" class="pie">Ir abajo</a>
-        </div>
-
+      <div class="pieSalediv">
+        <a href="#irFooter" class="pieSale pie">Ir abajo</a>
+      </div>
     </section>  
   <footer class="bg-dark text-center text-white marginf">
    
