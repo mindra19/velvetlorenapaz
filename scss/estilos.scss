@@ -43,38 +43,30 @@ $submit: (
     text-transform: uppercase;
     margin: 5px;
     padding: 0px;
-
 }
-
-
 body {
     background-color: $color-form;
     background-image: $color-gradient;
-    .nav-link{
+    .nav-link {
         @include nav;
     }
-    .pie {
-        text-decoration: none;
+    .wppDiv {
         display: inline-block;
         position: fixed;
-        top: 115px;
-        right: 0px;
         margin: 10px;
         padding: 5px;
-        background-color: $color-pie;
-        color: white;
-        border-radius: 5px;
+        left: 50%;
     }
     /*index nueva coleccion*/  
     .collection {
         display: grid;
         grid-template-columns: 5% 30% 30% 30% 5%;
-        grid-template-rows: 20% 75% 25%;
+        grid-template-rows: 5% 35% 5% 55%;
         background-color: #F8CEEC;
         padding-bottom: 30px;
         .collectionNew {
             grid-column: 3 / 4;
-            grid-row: 1;
+            grid-row: 1 / 2;
             justify-content: center;
             text-align: center;
             .tituloNew {
@@ -82,7 +74,7 @@ body {
                 font-family: 'Barlow Semi Condensed', 'sans-serif';
                 font-size: 30px;
                 color: rgb(24, 23, 23);
-                margin-top: 80px;
+                margin-top: 30px;
                 padding-bottom: 50px;
                 font-weight: bolder;
             }
@@ -106,7 +98,7 @@ body {
                 }
             }  
         }
-    }    
+        
     .contenedor {
         grid-column: 3 / 4;
         grid-row: 3 / 4;
@@ -124,14 +116,18 @@ body {
             color: black;
         }
     }
+        .bannerSale{
+            grid-column: 1 / 5;
+            grid-row: 4 / 5;
+
+        }
+    
+    }
   //sale
     .carrusel{
+        display: flex;
+        justify-content: center;
         background-color: rgba(255, 255, 255, 0.396);
-        padding-bottom: 25px;
-        .carruselMain {
-            margin-top: 30px;
-            margin-left: 50vh;
-        }
     }
     .card {
         margin-top: 100px;
@@ -210,29 +206,21 @@ body {
     }
     //media queries
     @media only screen and (max-width: 480px){
-        .pie{
-            top: 200px;
-            right: 15px;
-            margin:3px;
-            padding:5px;
-            background-color:black;
-            color:white;
+        .menuNav {
+            margin-bottom: 60px;
         }
-        .pieSalediv{
-            text-decoration: none;
+        .wppDiv {
             display: inline-block;
             position: fixed;
-            top: 200px;
-            right: 45px;
-           
+            top: 485px;
+            left: 400px;
+            height: 74px;
         }
-        .pieSale{
-            text-decoration: none;
-            margin:3px;
-            padding: 5px;
-            background-color:black;
-            color:white;
-            border-radius: 5px;
+        .wpp {
+            bottom: 0px;
+        }
+        .wppImg {
+            width: 70%;
         }
         .collection {
             display: grid;
@@ -273,23 +261,15 @@ body {
             align-items: center;
         }
         .carrusel{
-            .carsbotton-right{
-                display: block;
-                right: 150px;
-            }
-            .carsbotton-left{
-                display:block;
-                left: -150px;
-            }
-            .carruselDiv{
-                display:block;
-                right: 150px;  
-            } 
+            display: flex;
+            justify-content: center;
+            transform: scale(1.25);
+            width: 520px;
         }
         .saleRow{
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
             .cardS{
                 display: flex;
                 flex-direction: column;
@@ -309,38 +289,9 @@ body {
                 margin-top:-50px;
             }
         }
-        .form{ 
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            margin: 0px;
-            padding: 0px;
-            .gridForm{
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr 1fr 2fr 1fr;
-                margin-top: 50px;
-                padding-left: 10px;
-                li{
-                    list-style: none;
-                    padding: 5px;
-                    margin: 5px;
-                    label{
-                        font-size: 17px;
-                        text-transform: uppercase;
-                        padding-right: 5px;
-                        color: black;
-                    }
-                    .text {
-                        display: flex;
-                        margin-top: 5px;
-                        padding: 10px;
-                        width: 300px;
-                        border: black 1px solid;
-                        color: black;
-                    }
-                }
-            }
+        .form-control {
+            margin-left: 40px;
+            width: 80%;
         }
     }
 } 
