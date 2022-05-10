@@ -220,24 +220,15 @@ body {
             margin-bottom: 60px;
         }
         .wppDiv {
-            display: inline-block;
-            position: fixed;
-            top: 485px;
-            left: 400px;
-            height: 74px;
+            display:none;
         }
-        .wpp {
-            bottom: 0px;
-        }
-        .wppImg {
-            width: 70%;
-        }
+     
         .collection {
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
             background-color: #F8CEEC;
-            padding-bottom: 30px;
+            padding-bottom: 0px;
             .img {
                 display: grid;
                 grid-template-columns: 1fr;
@@ -259,8 +250,27 @@ body {
                 grid-row: 3 / 4;
                 text-align: center;
                 margin: 2rem;
+            }
+            .bannerSale{
+                grid-column: 1 / 4;
+                grid-row: 4 / 5;
+                .imgSale{
+                    width: 30rem;
+                }
             }       
-        } 
+        }
+        .descuentoDiv{
+            display: flex;
+            justify-content: center;
+            color: white;
+            background-color: black;
+            padding: 10px;
+           
+            .descuento{
+                text-decoration: underline;
+                font-family: 'Quicksand', sans-serif;
+            }
+        }  
         .nuevo{
             display: grid;
             grid-template-columns: 1fr;

@@ -140,21 +140,13 @@ body {
     body .menuNav {
       margin-bottom: 60px; }
     body .wppDiv {
-      display: inline-block;
-      position: fixed;
-      top: 485px;
-      left: 400px;
-      height: 74px; }
-    body .wpp {
-      bottom: 0px; }
-    body .wppImg {
-      width: 70%; }
+      display: none; }
     body .collection {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 1fr;
       background-color: #F8CEEC;
-      padding-bottom: 30px; }
+      padding-bottom: 0px; }
       body .collection .img {
         display: grid;
         grid-template-columns: 1fr;
@@ -173,6 +165,20 @@ body {
         grid-row: 3 / 4;
         text-align: center;
         margin: 2rem; }
+      body .collection .bannerSale {
+        grid-column: 1 / 4;
+        grid-row: 4 / 5; }
+        body .collection .bannerSale .imgSale {
+          width: 30rem; }
+    body .descuentoDiv {
+      display: flex;
+      justify-content: center;
+      color: white;
+      background-color: black;
+      padding: 10px; }
+      body .descuentoDiv .descuento {
+        text-decoration: underline;
+        font-family: 'Quicksand', sans-serif; }
     body .nuevo {
       display: grid;
       grid-template-columns: 1fr; }
