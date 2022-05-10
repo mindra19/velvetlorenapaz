@@ -55,7 +55,8 @@ body {
         position: fixed;
         margin: 10px;
         padding: 5px;
-        left: 50%;
+        left: 93%;
+        bottom: 5px;
     }
     /*index nueva coleccion*/  
     .collection {
@@ -99,29 +100,38 @@ body {
             }  
         }
         
-    .contenedor {
-        grid-column: 3 / 4;
-        grid-row: 3 / 4;
-        text-align: center;
-        .more {
-            font-family: 'Barlow Semi Condensed', 'sans-serif';
-            font-size: 22px;
-            color: black;
-            text-decoration: underline 1px;
-            font-style: oblique;
-            font-weight:800;
-            
+        .contenedor {
+            grid-column: 3 / 4;
+            grid-row: 3 / 4;
+            text-align: center;
+            .more {
+                font-family: 'Barlow Semi Condensed', 'sans-serif';
+                font-size: 22px;
+                color: black;
+                text-decoration: underline 1px;
+                font-style: oblique;
+                font-weight:800;
+                
+            }
+            .more:hover{
+                color: black;
+            }
         }
-        .more:hover{
-            color: black;
-        }
-    }
         .bannerSale{
             grid-column: 1 / 5;
             grid-row: 4 / 5;
-
         }
-    
+    }
+    .descuentoDiv{
+        display: flex;
+        justify-content: center;
+        color: white;
+        background-color: black;
+        padding: 10px;
+        .descuento{
+            text-decoration: underline;
+            font-family: 'Quicksand', sans-serif;
+        }
     }
   //sale
     .carrusel{

@@ -19,7 +19,8 @@ body {
     position: fixed;
     margin: 10px;
     padding: 5px;
-    left: 50%; }
+    left: 93%;
+    bottom: 5px; }
   body .collection {
     display: grid;
     grid-template-columns: 5% 30% 30% 30% 5%;
@@ -69,6 +70,15 @@ body {
     body .collection .bannerSale {
       grid-column: 1 / 5;
       grid-row: 4 / 5; }
+  body .descuentoDiv {
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    padding: 10px; }
+    body .descuentoDiv .descuento {
+      text-decoration: underline;
+      font-family: 'Quicksand', sans-serif; }
   body .carrusel {
     display: flex;
     justify-content: center;
