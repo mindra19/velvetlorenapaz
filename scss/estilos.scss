@@ -110,12 +110,9 @@ body {
                 color: black;
                 text-decoration: underline 1px;
                 font-style: oblique;
-                font-weight:800;
-                
+                font-weight:800;                
             }
-            .more:hover{
-                color: black;
-            }
+
         }
         .bannerSale{
             grid-column: 1 / 5;
@@ -128,6 +125,10 @@ body {
         color: white;
         background-color: black;
         padding: 10px;
+        .descuentoLink{
+            text-decoration: underline;
+            color: white;
+        }
         .descuento{
             text-decoration: underline;
             font-family: 'Quicksand', sans-serif;
