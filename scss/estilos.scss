@@ -126,10 +126,11 @@ body {
         background-color: black;
         padding: 10px;
         .descuentoLink{
+            text-decoration: none;
             color: white;
         }
         .descuento{
-            text-decoration: underline;
+            border-bottom: solid 2px white;
             font-family: 'Quicksand', sans-serif;
         }
     }
