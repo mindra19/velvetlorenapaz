@@ -15,7 +15,7 @@ $submit: (
 );
 
 @mixin nav {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Quicksand';
     text-transform: uppercase;
     margin: 5px;
     padding: 0px;
@@ -39,14 +39,27 @@ $submit: (
 );
 
 @mixin nav {
-    font-family: 'Quicksand', sans-serif;
-    text-transform: uppercase;
+    font-family:'Barlow Semi Condensed';
+    text-transform:uppercase;
     margin: 5px;
     padding: 0px;
 }
 body {
     background-color: $color-form;
     background-image: $color-gradient;
+    .logo{
+        display: flex;
+        justify-content: center;
+        margin-left: 20px;
+        padding: 0%;
+        
+        .logoImg{
+            width: 120px;
+        }
+    }
+    .menu{
+        margin-left: 0px;
+    }
     .nav-link {
         @include nav;
     }
@@ -72,12 +85,12 @@ body {
             text-align: center;
             .tituloNew {
                 text-transform: uppercase;
-                font-family: 'Barlow Semi Condensed', 'sans-serif';
+                font-family: 'Barlow Semi Condensed';
                 font-size: 30px;
                 color: rgb(24, 23, 23);
                 margin-top: 30px;
                 padding-bottom: 50px;
-                font-weight: bolder;
+                
             }
         }
         .img {
@@ -105,7 +118,7 @@ body {
             grid-row: 3 / 4;
             text-align: center;
             .more {
-                font-family: 'Barlow Semi Condensed', 'sans-serif';
+                font-family:'Barlow Semi Condensed', sans-serif;
                 font-size: 22px;
                 color: black;
                 text-decoration: underline 1px;
@@ -131,9 +144,40 @@ body {
         }
         .descuento{
             border-bottom: solid 2px white;
-            font-family: 'Quicksand', sans-serif;
+            font-family:'Barlow Semi Condensed', sans-serif;
+            
         }
     }
+    .contenedorItems{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: solid 1px black;
+        background: white;
+        margin-top: 20px;
+        .coleccionItems{
+           border-left: solid 1px black;
+           .itemImagenBorder{
+               border-right: solid 1px black;
+               
+           }
+           .itemTexto{
+            text-decoration:none; 
+            text-align:center;
+            text-transform: uppercase;
+            color: black;
+            font-family:  'Barlow Semi Condensed', sans-serif;
+            font-size:larger;
+            border-top: solid 1px black;
+            padding: 5px;
+            
+           }
+        
+        }
+    }
+
+        
+    
   //sale
     .carrusel{
         display: flex;

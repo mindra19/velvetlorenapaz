@@ -9,8 +9,17 @@ body {
   background-color: #f8ceec;
   background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
   /*index nueva coleccion*/ }
+  body .logo {
+    display: flex;
+    justify-content: center;
+    margin-left: 20px;
+    padding: 0%; }
+    body .logo .logoImg {
+      width: 120px; }
+  body .menu {
+    margin-left: 0px; }
   body .nav-link {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Barlow Semi Condensed';
     text-transform: uppercase;
     margin: 5px;
     padding: 0px; }
@@ -34,12 +43,11 @@ body {
       text-align: center; }
       body .collection .collectionNew .tituloNew {
         text-transform: uppercase;
-        font-family: 'Barlow Semi Condensed', 'sans-serif';
+        font-family: 'Barlow Semi Condensed';
         font-size: 30px;
         color: #181717;
         margin-top: 30px;
-        padding-bottom: 50px;
-        font-weight: bolder; }
+        padding-bottom: 50px; }
     body .collection .img {
       grid-column: 2 / 5;
       grid-row: 2 / 3;
@@ -59,7 +67,7 @@ body {
       grid-row: 3 / 4;
       text-align: center; }
       body .collection .contenedor .more {
-        font-family: 'Barlow Semi Condensed', 'sans-serif';
+        font-family: 'Barlow Semi Condensed', sans-serif;
         font-size: 22px;
         color: black;
         text-decoration: underline 1px;
@@ -79,7 +87,27 @@ body {
       color: white; }
     body .descuentoDiv .descuento {
       border-bottom: solid 2px white;
-      font-family: 'Quicksand', sans-serif; }
+      font-family: 'Barlow Semi Condensed', sans-serif; }
+  body .contenedorItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: solid 1px black;
+    background: white;
+    margin-top: 20px; }
+    body .contenedorItems .coleccionItems {
+      border-left: solid 1px black; }
+      body .contenedorItems .coleccionItems .itemImagenBorder {
+        border-right: solid 1px black; }
+      body .contenedorItems .coleccionItems .itemTexto {
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        color: black;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-size: larger;
+        border-top: solid 1px black;
+        padding: 5px; }
   body .carrusel {
     display: flex;
     justify-content: center;
