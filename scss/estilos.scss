@@ -176,40 +176,102 @@ body {
         }
     }
     //nuevo
-    .seccionNuevo{
-        display: grid;
-        grid-template-columns: 5% 30% 30% 30% 5%;
-        grid-template-rows: 10% 40% 40% 10%;
-        .tituloNuevaColeccion{
-            grid-column: 3/4;
-            grid-row: 1/2;
-        }
-        .nuevoUno{
-            grid-column: 2/3;
-            grid-row: 2/3;
-            .imagen
-        }
-        .nuevoDos{
-            grid-column: 3/4;
-            grid-row: 2/3 ;
-        }
-        .nuevoTres{
-            grid-column: 4/5;
-            grid-row: 2/3;
-        }
-        .nuevoCuatro{
-            grid-column: 2/3;
-            grid-row: 3/4;
-        }
-        .nuevoCinco{
-            grid-column: 3/4 ;
-            grid-row: 3/4;
-        }
-        .nuevoSeis{
-            grid-column: 4/5;
-            grid-row: 3/4;
+    .tituloNuevaColeccion{  
+        display: flex;
+        justify-content: center;
+        border-top: solid 1px black;
+        background-color:#f8ceec;
+        .tituloColeccion{
+            text-transform: uppercase;
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            padding-top: 10px ;
+            font-size: 28px;
         }
     }
+    .contenedorNuevo{
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-template-rows: 1fr;
+       background-color: white;
+       width: 100%;
+       border-top: solid 1px black;
+       .nuevo{
+        border-right: solid 1px black;
+           .itemNuevo{
+                border-left: solid 1px black;
+                width: 100%;
+                .imgNuevo{
+                    width: 447px;
+                }
+                .infoNuevo:hover{
+                    transition: 0,05s;
+                    transform:translate(0, -10px);
+                }
+                .infoNuevo{
+                    text-align: center;
+                    border-bottom: 1px solid black;
+                    .nuevoTexto{
+                        font-size: 18px;
+                        font-family:'Barlow Semi Condensed', sans-serif ;
+                        text-transform: uppercase;
+                        border-top: solid 1px black;
+                    }
+                }  
+            }
+            .itemUno{
+                grid-column: 1 / 4;
+                grid-row: 1 / 2;
+                display: flex;
+                .precioNuevo{   
+                    color: rgb(93, 85, 85);
+                    font-style: italic;
+                }
+                .prenda1{
+                    grid-column: 1 / 2;
+                    grid-row: 1 / 2;
+                    justify-content: center;
+                }
+                .prenda2{
+                    grid-column: 2 / 3;
+                    grid-row: 1 / 2;
+                    justify-content: center;
+                }
+                .prenda3{
+                    grid-column: 3 / 4;
+                    grid-row: 1 / 2;
+                    justify-content: center;
+                }
+            }
+            .itemDos{
+                grid-column: 1 / 4;
+                grid-row: 1 / 2;
+                display: flex;
+                .precioNuevo{   
+                    color: rgb(93, 85, 85);
+                    font-style: italic;
+                }
+                .prenda4{
+                    grid-column: 1 / 2;
+                    grid-row: 1 / 2;
+                    justify-content: center;
+                }
+                .prenda5{
+                    grid-column: 2 / 3;
+                    grid-row: 1 / 2;
+                    justify-content: center;
+                }
+                .prenda6{
+                    grid-column: 3 / 4;
+                    grid-row: 1 / 2;
+                    justify-content: center;
+                }
+            }
+        }
+     
+       
+    }
+
+
 
         
     
