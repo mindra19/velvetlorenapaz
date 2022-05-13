@@ -16,8 +16,6 @@ body {
     padding: 0%; }
     body .logo .logoImg {
       width: 120px; }
-  body .menu {
-    margin-left: 0px; }
   body .nav-link {
     font-family: 'Barlow Semi Condensed';
     text-transform: uppercase;
@@ -96,9 +94,9 @@ body {
     background: white;
     margin-top: 20px; }
     body .contenedorItems .coleccionItems {
-      border-left: solid 1px black; }
-      body .contenedorItems .coleccionItems .itemImagenBorder {
-        border-right: solid 1px black; }
+      border-right: solid 1px black; }
+      body .contenedorItems .coleccionItems .leftBorder {
+        border-left: solid 1px black; }
       body .contenedorItems .coleccionItems .itemTexto {
         text-decoration: none;
         text-align: center;
@@ -108,6 +106,11 @@ body {
         font-size: larger;
         border-top: solid 1px black;
         padding: 5px; }
+      body .contenedorItems .coleccionItems .itemLink {
+        text-decoration: none; }
+      body .contenedorItems .coleccionItems .infoItems:hover {
+        transition: 0,05s;
+        transform: translate(0, -10px); }
   body .carrusel {
     display: flex;
     justify-content: center;

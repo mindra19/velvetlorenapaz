@@ -52,13 +52,9 @@ body {
         justify-content: center;
         margin-left: 20px;
         padding: 0%;
-        
         .logoImg{
             width: 120px;
         }
-    }
-    .menu{
-        margin-left: 0px;
     }
     .nav-link {
         @include nav;
@@ -156,10 +152,9 @@ body {
         background: white;
         margin-top: 20px;
         .coleccionItems{
-           border-left: solid 1px black;
-           .itemImagenBorder{
-               border-right: solid 1px black;
-               
+           border-right: solid 1px black;
+           .leftBorder{
+            border-left: solid 1px black;
            }
            .itemTexto{
             text-decoration:none; 
@@ -170,9 +165,14 @@ body {
             font-size:larger;
             border-top: solid 1px black;
             padding: 5px;
-            
            }
-        
+           .itemLink{
+               text-decoration: none;
+           }
+           .infoItems:hover{
+            transition: 0,05s;
+            transform:translate(0, -10px);
+        }
         }
     }
 
