@@ -111,6 +111,31 @@ body {
       body .contenedorItems .coleccionItems .infoItems:hover {
         transition: 0,05s;
         transform: translate(0, -10px); }
+  body .seccionNuevo {
+    display: grid;
+    grid-template-columns: 5% 30% 30% 30% 5%;
+    grid-template-rows: 10% 40% 40% 10%; }
+    body .seccionNuevo .tituloNuevaColeccion {
+      grid-column: 3/4;
+      grid-row: 1/2; }
+    body .seccionNuevo .nuevoUno {
+      grid-column: 2/3;
+      grid-row: 2/3; }
+    body .seccionNuevo .nuevoDos {
+      grid-column: 3/4;
+      grid-row: 2/3; }
+    body .seccionNuevo .nuevoTres {
+      grid-column: 4/5;
+      grid-row: 2/3; }
+    body .seccionNuevo .nuevoCuatro {
+      grid-column: 2/3;
+      grid-row: 3/4; }
+    body .seccionNuevo .nuevoCinco {
+      grid-column: 3/4;
+      grid-row: 3/4; }
+    body .seccionNuevo .nuevoSeis {
+      grid-column: 4/5;
+      grid-row: 3/4; }
   body .carrusel {
     display: flex;
     justify-content: center;
