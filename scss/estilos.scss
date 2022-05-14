@@ -188,6 +188,16 @@ body {
             font-size: 28px;
         }
     }
+    //prendas ->
+    .menuPrendas{
+        border-bottom: 1px solid black;
+    }
+    .relleno{
+        display: flex;
+        padding: 50px;
+        background-color: white;
+    }
+    //prendas <--
     .contenedorNuevo{
        display: grid;
        grid-template-columns: 1fr 1fr 1fr;
@@ -269,12 +279,7 @@ body {
         }
      
        
-    }
-
-
-
-        
-    
+    }    
     //sale
     .carrusel{
         display: flex;
@@ -291,25 +296,6 @@ body {
         }
     }
 
-    //prendas
-    .contenedorPrendas {
-        @extend %alineacion;
-        .imagen{
-            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-            transform: scale(0.8);
-            .imagen:hover{
-            transform: scale(0.9);   
-            }
-            .precio{
-                background-color:#000000f1;
-                color: white;
-                text-align: center;
-                font-size: 20px;
-                margin:0px;
-                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            }
-        }
-    }
 
     //contacto
     .form{
