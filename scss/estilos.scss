@@ -175,21 +175,9 @@ body {
         }
         }
     }
-    //nuevo
-    .tituloNuevaColeccion{  
-        display: flex;
-        justify-content: center;
-        border-top: solid 1px black;
-        background-color:#f8ceec;
-        .tituloColeccion{
-            text-transform: uppercase;
-            font-family: 'Barlow Semi Condensed', sans-serif;
-            padding-top: 10px ;
-            font-size: 28px;
-        }
-    }
+
     //prendas ->
-    .menuPrendas{
+    .menu{
         border-bottom: 1px solid black;
     }
     .relleno{
@@ -204,7 +192,6 @@ body {
        grid-template-rows: 1fr;
        background-color: white;
        width: 100%;
-       border-top: solid 1px black;
        .nuevo{
         border-right: solid 1px black;
            .itemNuevo{
@@ -220,11 +207,21 @@ body {
                 .infoNuevo{
                     text-align: center;
                     border-bottom: 1px solid black;
+                    padding-bottom: 15px;
                     .nuevoTexto{
                         font-size: 18px;
                         font-family:'Barlow Semi Condensed', sans-serif ;
                         text-transform: uppercase;
                         border-top: solid 1px black;
+                        margin: 0px;
+                    }
+                    .botonP{
+                        text-decoration: none;
+                        color: white;
+                        border: solid 1px black;
+                        padding: 10px;
+                        bottom: 5px ;
+                        background-color: black;
                     }
                 }  
             }
@@ -281,10 +278,23 @@ body {
        
     }    
     //sale
+    .titulo{
+        text-align: center;
+        background-color:#F8CEEC;
+        padding: 20px;
+        color: black;
+        margin: 0px;
+        border-bottom: solid 1px black;
+        font-family: 'Barlow Semi Condensed';
+        text-transform: uppercase;
+        font-size: 28px;
+        
+    }
     .carrusel{
         display: flex;
         justify-content: center;
-        background-color: rgba(255, 255, 255, 0.396);
+        background-color: whitesmoke;
+        border-bottom: solid 1px black;
     }
     .card {
         margin-top: 100px;
