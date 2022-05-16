@@ -114,7 +114,7 @@ body {
             grid-row: 3 / 4;
             text-align: center;
             .more {
-                font-family:'Barlow Semi Condensed', sans-serif;
+                font-family:'Barlow Semi Condensed';
                 font-size: 22px;
                 color: black;
                 text-decoration: underline 1px;
@@ -140,7 +140,7 @@ body {
         }
         .descuento{
             border-bottom: solid 2px white;
-            font-family:'Barlow Semi Condensed', sans-serif;
+            font-family:'Barlow Semi Condensed';
             
         }
     }
@@ -161,7 +161,7 @@ body {
             text-align:center;
             text-transform: uppercase;
             color: black;
-            font-family:  'Barlow Semi Condensed', sans-serif;
+            font-family:  'Barlow Semi Condensed';
             font-size:larger;
             border-top: solid 1px black;
             padding: 5px;
@@ -210,7 +210,7 @@ body {
                     padding-bottom: 15px;
                     .nuevoTexto{
                         font-size: 18px;
-                        font-family:'Barlow Semi Condensed', sans-serif ;
+                        font-family:'Barlow Semi Condensed';
                         text-transform: uppercase;
                         border-top: solid 1px black;
                         margin: 0px;
@@ -222,6 +222,8 @@ body {
                         padding: 10px;
                         bottom: 5px ;
                         background-color: black;
+                        font-family:'Barlow Semi Condensed';
+                        text-transform: uppercase;
                     }
                 }  
             }

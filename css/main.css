@@ -58,7 +58,7 @@ body {
       grid-row: 3 / 4;
       text-align: center; }
       body .collection .contenedor .more {
-        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-family: 'Barlow Semi Condensed';
         font-size: 22px;
         color: black;
         text-decoration: underline 1px;
@@ -78,7 +78,7 @@ body {
       color: white; }
     body .descuentoDiv .descuento {
       border-bottom: solid 2px white;
-      font-family: 'Barlow Semi Condensed', sans-serif; }
+      font-family: 'Barlow Semi Condensed'; }
   body .contenedorItems {
     display: flex;
     flex-wrap: wrap;
@@ -95,7 +95,7 @@ body {
         text-align: center;
         text-transform: uppercase;
         color: black;
-        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-family: 'Barlow Semi Condensed';
         font-size: larger;
         border-top: solid 1px black;
         padding: 5px; }
@@ -132,7 +132,7 @@ body {
           padding-bottom: 15px; }
           body .contenedorNuevo .nuevo .itemNuevo .infoNuevo .nuevoTexto {
             font-size: 18px;
-            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-family: 'Barlow Semi Condensed';
             text-transform: uppercase;
             border-top: solid 1px black;
             margin: 0px; }
@@ -142,7 +142,9 @@ body {
             border: solid 1px black;
             padding: 10px;
             bottom: 5px;
-            background-color: black; }
+            background-color: black;
+            font-family: 'Barlow Semi Condensed';
+            text-transform: uppercase; }
       body .contenedorNuevo .nuevo .itemUno {
         grid-column: 1 / 4;
         grid-row: 1 / 2;
