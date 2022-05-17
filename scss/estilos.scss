@@ -2,7 +2,7 @@
 $color-form: #f8ceec;
 $color-pie: black;
 $color-gradient: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
-$color-gradient2:linear-gradient(315deg, #f8ceec 0%, #d3cce08d 74%);
+$color-gradient2:linear-gradient(315deg, #f8ceec 0%, #e5dadaca 74%);
 
 
 $submit: (
@@ -310,43 +310,101 @@ body {
 
 
     //contacto
-    .form{
-        display: flex;
-        justify-content: center;
+    .contenedorFormContacto{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
         background-color: $color-form;
-        background-image: $color-gradient2; 
-        padding: 50px;
-        margin: 0rem 18rem 0rem 20rem;
-        li{
-            list-style: none;
-            padding: 5px;
-            margin: 5px;
-            label{
-                font-size: 20px;
-                text-transform: uppercase;
-                padding-right: 5px;
-                color: black;
+        background-image: $color-gradient2;
+       
+        .form{
+            grid-column: 1/2;
+            display: flex;
+            justify-content: center;
+            padding: 20px 30px 50px 0px;
+            font-family: 'Barlow Semi Condensed';
+            
+            li{
+                list-style: none;
+                padding: 5px;
+                margin: 5px;
+                label{
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    padding-right: 5px;
+                    color: black;
+                }
+                .text {
+                    display: flex;
+                    margin-top: 5px;
+                    padding: 10px;
+                    width: 400px;
+                    border: black 1px solid;
+                    color: black;
+                }
+                .submit {
+                    padding: map-get($map: $submit, $key: pad-submit);
+                    text-transform: map-get($map: $submit, $key: t-transform-submit);
+                    background-color: map-get($map:$submit , $key: bg-submit);
+                    color: map-get($map: $submit, $key: color-submit );
+                    border: map-get($map: $submit, $key: border-submit );
+                    font-size: map-get($map: $submit, $key:fsize-submit);
+                
+                }
             }
-            .text {
-                display: flex;
-                margin-top: 5px;
-                padding: 10px;
-                width: 400px;
-                border: black 1px solid;
-                color: black;
-            }
-            .submit {
-                padding: map-get($map: $submit, $key: pad-submit);
-                text-transform: map-get($map: $submit, $key: t-transform-submit);
-                background-color: map-get($map:$submit , $key: bg-submit);
-                color: map-get($map: $submit, $key: color-submit );
-                border: map-get($map: $submit, $key: border-submit );
-                font-size: map-get($map: $submit, $key:fsize-submit);
-              
-            }
+            
         }
-        
+        .contenedorContacto{
+            display: flex;
+            justify-content: center;
+            grid-column: 2/3;
+            .contacto{
+                width: 100%;
+                .telefonoWpp{
+                    font-family: 'Barlow Semi Condensed';
+                    border-bottom: solid 1px black;
+                    text-transform: uppercase;
+                    padding: 30px 0px 10px 0px;
+                    color: black;
+                }
+                .atencionDiv{
+                    font-family: 'Barlow Semi Condensed';
+                    text-transform: uppercase;
+                    .horario{
+                        padding: 10px 0px;
+                        font-size: 20px;
+                        color: black;
+                    }
+                    .numero{
+                        text-decoration: none;
+                        color: rgba(43, 42, 42, 0.8);
+                        font-size: 20px;
+                    }
+                    .newslettersEmail{
+                        text-decoration: none;
+                        font-family:'Barlow Semi Condensed' ;
+                        text-transform: uppercase;
+                        padding: 8px 200px 8px 5px;
+                        margin-right: 20px;
+                        border: solid 1px black;
+                    }
+                    .newslettersEnviar{
+                        text-decoration: none;
+                        font-family:'Barlow Semi Condensed' ;
+                        text-transform: uppercase;
+                        border: solid 1px black;
+                        padding: 8px;
+                        background-color: black;
+                        color: white;
+                    }
+                }
+                
+            }
+            
+        }
     }
+   
+   
     //footer
     .marginf{
         margin-top: 200px;

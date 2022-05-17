@@ -205,36 +205,79 @@ body {
     body .card .btn {
       background-color: black;
       border: none; }
-  body .form {
-    display: flex;
-    justify-content: center;
+  body .contenedorFormContacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     background-color: #f8ceec;
-    background-image: linear-gradient(315deg, #f8ceec 0%, #d3cce08d 74%);
-    padding: 50px;
-    margin: 0rem 18rem 0rem 20rem; }
-    body .form li {
-      list-style: none;
-      padding: 5px;
-      margin: 5px; }
-      body .form li label {
-        font-size: 20px;
-        text-transform: uppercase;
-        padding-right: 5px;
-        color: black; }
-      body .form li .text {
-        display: flex;
-        margin-top: 5px;
-        padding: 10px;
-        width: 400px;
-        border: black 1px solid;
-        color: black; }
-      body .form li .submit {
-        padding: 15px 30px;
-        text-transform: uppercase;
-        background-color: black;
-        color: white;
-        border: black 1px solid;
-        font-size: 15px; }
+    background-image: linear-gradient(315deg, #f8ceec 0%, #e5dadaca 74%); }
+    body .contenedorFormContacto .form {
+      grid-column: 1/2;
+      display: flex;
+      justify-content: center;
+      padding: 20px 30px 50px 0px;
+      font-family: 'Barlow Semi Condensed'; }
+      body .contenedorFormContacto .form li {
+        list-style: none;
+        padding: 5px;
+        margin: 5px; }
+        body .contenedorFormContacto .form li label {
+          font-size: 20px;
+          text-transform: uppercase;
+          padding-right: 5px;
+          color: black; }
+        body .contenedorFormContacto .form li .text {
+          display: flex;
+          margin-top: 5px;
+          padding: 10px;
+          width: 400px;
+          border: black 1px solid;
+          color: black; }
+        body .contenedorFormContacto .form li .submit {
+          padding: 15px 30px;
+          text-transform: uppercase;
+          background-color: black;
+          color: white;
+          border: black 1px solid;
+          font-size: 15px; }
+    body .contenedorFormContacto .contenedorContacto {
+      display: flex;
+      justify-content: center;
+      grid-column: 2/3; }
+      body .contenedorFormContacto .contenedorContacto .contacto {
+        width: 100%; }
+        body .contenedorFormContacto .contenedorContacto .contacto .telefonoWpp {
+          font-family: 'Barlow Semi Condensed';
+          border-bottom: solid 1px black;
+          text-transform: uppercase;
+          padding: 30px 0px 10px 0px;
+          color: black; }
+        body .contenedorFormContacto .contenedorContacto .contacto .atencionDiv {
+          font-family: 'Barlow Semi Condensed';
+          text-transform: uppercase; }
+          body .contenedorFormContacto .contenedorContacto .contacto .atencionDiv .horario {
+            padding: 10px 0px;
+            font-size: 20px;
+            color: black; }
+          body .contenedorFormContacto .contenedorContacto .contacto .atencionDiv .numero {
+            text-decoration: none;
+            color: rgba(43, 42, 42, 0.8);
+            font-size: 20px; }
+          body .contenedorFormContacto .contenedorContacto .contacto .atencionDiv .newslettersEmail {
+            text-decoration: none;
+            font-family: 'Barlow Semi Condensed';
+            text-transform: uppercase;
+            padding: 8px 200px 8px 5px;
+            margin-right: 20px;
+            border: solid 1px black; }
+          body .contenedorFormContacto .contenedorContacto .contacto .atencionDiv .newslettersEnviar {
+            text-decoration: none;
+            font-family: 'Barlow Semi Condensed';
+            text-transform: uppercase;
+            border: solid 1px black;
+            padding: 8px;
+            background-color: black;
+            color: white; }
   body .marginf {
     margin-top: 200px; }
   body .btnicon {
