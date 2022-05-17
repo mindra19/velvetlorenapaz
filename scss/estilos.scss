@@ -15,7 +15,7 @@ $submit: (
 );
 
 @mixin nav {
-    font-family: 'Quicksand';
+    font-family: 'Barlow Semi Condensed';
     text-transform: uppercase;
     margin: 5px;
     padding: 0px;
@@ -27,22 +27,6 @@ $submit: (
     justify-items: center;
     row-gap: 30px;
     margin-top: 60px; 
-}
-
-$submit: (
-        pad-submit: 15px 30px,
-        t-transform-submit: uppercase,
-        bg-submit: black,
-        color-submit: white,
-        border-submit: black 1px solid,
-        fsize-submit: 15px,
-);
-
-@mixin nav {
-    font-family:'Barlow Semi Condensed';
-    text-transform:uppercase;
-    margin: 5px;
-    padding: 0px;
 }
 body {
     background-color: $color-form;
@@ -404,8 +388,6 @@ body {
             
         }
     }
-   
-   
     //footer
     .marginf{
         margin-top: 200px;
@@ -413,105 +395,12 @@ body {
     .btnicon{
         border-radius: 50%;
     }
+
+}
     //media queries
-    @media only screen and (max-width: 480px){
-        .menuNav {
-            margin-bottom: 60px;
+    @media only screen and (max-width: 1024px){
+        .container{
+            visibility: hidden;
         }
-        .wppDiv {
-            display:none;
-        }
-     
-        .collection {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
-            background-color: #F8CEEC;
-            padding-bottom: 0px;
-            .img {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr;
-                margin-top: 50px; 
-                .new {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    row-gap: 2rem;
-                    .imgIndex{
-                        width: 50%;
-                        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-                    }
-                }
-            }
-            .contenedor {
-                grid: column 2/3;
-                grid-row: 3 / 4;
-                text-align: center;
-                margin: 2rem;
-            }
-            .bannerSale{
-                grid-column: 1 / 4;
-                grid-row: 4 / 5;
-                .imgSale{
-                    width: 30rem;
-                }
-            }       
-        }
-        .descuentoDiv{
-            display: flex;
-            justify-content: center;
-            color: white;
-            background-color: black;
-            padding: 10px;
-           
-            .descuento{
-                text-decoration: underline;
-                font-family: 'Quicksand', sans-serif;
-            }
-        }  
-        .nuevo{
-            display: grid;
-            grid-template-columns: 1fr;
-        }
-        .nuevoCard{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .carrusel{
-            display: flex;
-            justify-content: center;
-            transform: scale(1.25);
-            width: 520px;
-        }
-        .saleRow{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
-            .cardS{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-        .contenedorPrendas{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0px;
-            row-gap: 0px;
-            .imagen{
-                box-shadow: #26394d 0px 20px 10px -10px;
-                transform: scale(0.60);
-                margin-bottom:-50px;
-                margin-top:-50px;
-            }
-        }
-        .form-control {
-            margin-left: 40px;
-            width: 80%;
-        }
-    }
-} 
+    } 
 
