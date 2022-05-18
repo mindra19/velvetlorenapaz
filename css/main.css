@@ -5,15 +5,18 @@ body {
   body .logo {
     display: flex;
     justify-content: center;
-    margin-left: 20px;
-    padding: 0%; }
+    padding: 0%;
+    border-bottom: solid 1px black; }
     body .logo .logoImg {
       width: 120px; }
   body .nav-link {
     font-family: 'Barlow Semi Condensed';
     text-transform: uppercase;
-    margin: 5px;
+    margin: 10px;
     padding: 0px; }
+  body .nav-link:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 15px 10px -5px rgba(85, 84, 84, 0.386); }
   body .wppDiv {
     display: inline-block;
     position: fixed;
@@ -288,3 +291,7 @@ body {
     margin-top: 20px; }
   body .btnicon {
     border-radius: 50%; }
+
+@media only screen and (max-width: 1024px) {
+  .menu {
+    justify-content: center; } }
