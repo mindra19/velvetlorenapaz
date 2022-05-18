@@ -72,7 +72,7 @@ body {
     justify-content: center;
     color: white;
     background-color: black;
-    padding: 10px; }
+    padding: 15px; }
     body .descuentoDiv .descuentoLink {
       text-decoration: none;
       color: white; }
@@ -85,8 +85,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     border: solid 1px black;
-    background: white;
-    margin-top: 20px; }
+    background: white; }
     body .contenedorItems .coleccionItems {
       border-right: solid 1px black; }
       body .contenedorItems .coleccionItems .leftBorder {
@@ -118,7 +117,8 @@ body {
     background-color: white;
     width: 100%; }
     body .contenedorNuevo .nuevo {
-      border-right: solid 1px black; }
+      border-right: solid 1px black;
+      background-color: white; }
       body .contenedorNuevo .nuevo .itemNuevo {
         border-left: solid 1px black;
         width: 100%; }

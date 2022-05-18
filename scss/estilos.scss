@@ -118,7 +118,7 @@ body {
         justify-content: center;
         color: white;
         background-color: black;
-        padding: 10px;
+        padding: 15px;
         .descuentoLink{
             text-decoration: none;
             color: white;
@@ -135,7 +135,6 @@ body {
         justify-content: center;
         border: solid 1px black;
         background: white;
-        margin-top: 20px;
         .coleccionItems{
            border-right: solid 1px black;
            .leftBorder{
@@ -179,6 +178,7 @@ body {
        width: 100%;
        .nuevo{
         border-right: solid 1px black;
+        background-color: white;
            .itemNuevo{
                 border-left: solid 1px black;
                 width: 100%;
