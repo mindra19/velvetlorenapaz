@@ -172,7 +172,7 @@ body {
     //prendas <--
     .contenedorNuevo{
        display: grid;
-       grid-template-columns: 1fr 1fr 1fr;
+       grid-template-columns: 1fr;
        grid-template-rows: 1fr;
        background-color: white;
        width: 100%;
@@ -183,7 +183,7 @@ body {
                 border-left: solid 1px black;
                 width: 100%;
                 .imgNuevo{
-                    width: 447px;
+                    width: 100%;
                 }
                 .infoNuevo:hover{
                     transition: 0,05s;
@@ -436,21 +436,5 @@ body {
     }
 }
     //media queries
-    @media  (min-width: 1680px)  {
-        .collection {
-            padding: 0px;
-            margin-bottom: 9px;
-            .bannerSale{
-            grid-column: 1/6;
-            margin-bottom: 38px;
-                .imgSale{
-                    
-                    width: 1680px;
-                }
-            }
-        }
-        .nuevo{
-            width: 1680px;  
-        }    
-    }
+
 
