@@ -205,6 +205,18 @@ body {
     body .card .btn {
       background-color: black;
       border: none; }
+  body .infoNuevo .tachado {
+    text-decoration: line-through;
+    font-family: 'Barlow Semi Condensed';
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 900; }
+  body .infoNuevo .precioColor {
+    color: red;
+    font-family: 'Barlow Semi Condensed';
+    font-style: italic;
+    font-weight: 900;
+    font-size: 20px; }
   body .contenedorFormContacto {
     display: grid;
     grid-template-columns: 1fr 1fr;
