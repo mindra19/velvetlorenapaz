@@ -164,24 +164,21 @@ body {
     .menu{
         border-bottom: 1px solid black;
     }
-    .relleno{
-        display: flex;
-        padding: 50px;
-        background-color: white;
-    }
+
     //prendas <--
     .contenedorNuevo{
        display: grid;
        grid-template-columns: 1fr;
        grid-template-rows: 1fr;
        background-color: white;
-       width: 100%;
+       
        .nuevo{
         border-right: solid 1px black;
         background-color: white;
            .itemNuevo{
                 border-left: solid 1px black;
                 width: 100%;
+
                 .imgNuevo{
                     width: 100%;
                 }
@@ -213,51 +210,32 @@ body {
                 }  
             }
             .itemUno{
-                grid-column: 1 / 4;
-                grid-row: 1 / 2;
+                grid-column: 1 / 1;
+                
                 display: flex;
                 .precioNuevo{   
                     color: rgb(93, 85, 85);
                     font-style: italic;
                 }
-                .prenda1{
-                    grid-column: 1 / 2;
-                    grid-row: 1 / 2;
-                    justify-content: center;
-                }
-                .prenda2{
-                    grid-column: 2 / 3;
-                    grid-row: 1 / 2;
-                    justify-content: center;
-                }
-                .prenda3{
-                    grid-column: 3 / 4;
-                    grid-row: 1 / 2;
-                    justify-content: center;
-                }
+               
             }
             .itemDos{
-                grid-column: 1 / 4;
-                grid-row: 1 / 2;
+                grid-column: 1 / 1;
+                
                 display: flex;
                 .precioNuevo{   
                     color: rgb(93, 85, 85);
                     font-style: italic;
                 }
-                .prenda4{
-                    grid-column: 1 / 2;
-                    grid-row: 1 / 2;
-                    justify-content: center;
-                }
-                .prenda5{
-                    grid-column: 2 / 3;
-                    grid-row: 1 / 2;
-                    justify-content: center;
-                }
-                .prenda6{
-                    grid-column: 3 / 4;
-                    grid-row: 1 / 2;
-                    justify-content: center;
+               
+            }
+            .itemTres{
+                grid-column: 1 / 1;
+                display: flex;
+                
+                .precioNuevo{   
+                    color: rgb(93, 85, 85);
+                    font-style: italic;
                 }
             }
         }
@@ -429,7 +407,7 @@ body {
     }
     //footer
     .marginf{
-        margin-top: 200px;
+        margin-top: 20px;
     }
     .btnicon{
         border-radius: 50%;
