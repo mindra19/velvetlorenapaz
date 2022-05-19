@@ -68,7 +68,7 @@ body {
         font-style: oblique;
         font-weight: 800; }
     body .collection .bannerSale {
-      grid-column: 1 / 5;
+      grid-column: 1 / 6;
       grid-row: 4 / 5; }
   body .descuentoDiv {
     display: flex;
@@ -101,7 +101,8 @@ body {
         font-family: 'Barlow Semi Condensed';
         font-size: larger;
         border-top: solid 1px black;
-        padding: 5px; }
+        padding: 5px;
+        margin: 0px; }
       body .contenedorItems .coleccionItems .itemLink {
         text-decoration: none; }
       body .contenedorItems .coleccionItems .infoItems:hover {
@@ -294,4 +295,16 @@ body {
 
 @media only screen and (max-width: 1024px) {
   .menu {
-    justify-content: center; } }
+    justify-content: center; }
+  .imgSale {
+    width: 100%; }
+  .wppDiv {
+    visibility: hidden; }
+  .imgTablet {
+    border-top: solid 1px black; }
+  .enlacesTablet {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; }
+  .descuento {
+    text-align: center; } }

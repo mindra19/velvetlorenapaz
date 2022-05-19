@@ -113,7 +113,7 @@ body {
 
         }
         .bannerSale{
-            grid-column: 1 / 5;
+            grid-column: 1 / 6;
             grid-row: 4 / 5;
         }
     }
@@ -153,6 +153,7 @@ body {
             font-size:larger;
             border-top: solid 1px black;
             padding: 5px;
+            margin: 0px;
            }
            .itemLink{
                text-decoration: none;
@@ -420,10 +421,23 @@ body {
     //media queries
 @media only screen and (max-width:1024px) {
    .menu{
-       justify-content: center;
-       .navbar{
-           
-       }
+       justify-content: center;  
    }
+    .imgSale{
+        width: 100%;
+    }
+    .wppDiv{
+        visibility: hidden;
+    }
+    .imgTablet{
+        border-top: solid 1px black;
+    }
+    .enlacesTablet{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .descuento{
+        text-align: center;
+    }
 }
-
