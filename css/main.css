@@ -47,7 +47,7 @@ body {
           width: 30%;
           box-shadow: #26394d 0px 20px 30px -10px; }
         body .collection .img .new .imgIndex:hover {
-          transition: 0,05s;
+          transition: 0, 05s;
           transform: translate(0, -10px); }
     body .collection .contenedor {
       grid-column: 3 / 4;
@@ -83,7 +83,7 @@ body {
     body .descuentoDiv .descuentoIndex {
       border-bottom: solid 2px white;
       font-family: 'Barlow Semi Condensed';
-      animation-duration: 1,5s; }
+      animation-duration: 1, 5s; }
   body .contenedorItems {
     display: flex;
     flex-wrap: wrap;
@@ -101,7 +101,7 @@ body {
         body .contenedorItems .coleccionItems .itemImagen .imgItem {
           border-top: solid 1px black; }
         body .contenedorItems .coleccionItems .itemImagen .infoItems:hover {
-          transition: 0,05s;
+          transition: 0, 05s;
           transform: translate(0, -10px);
           background: white; }
         body .contenedorItems .coleccionItems .itemImagen .itemTexto {
@@ -132,7 +132,7 @@ body {
         body .contenedorNuevo .nuevo .itemNuevo .imgNuevo {
           width: 100%; }
         body .contenedorNuevo .nuevo .itemNuevo .infoNuevo:hover {
-          transition: 0,05s;
+          transition: 0, 05s;
           transform: translate(0, -10px); }
         body .contenedorNuevo .nuevo .itemNuevo .infoNuevo {
           text-align: center;
@@ -219,7 +219,7 @@ body {
         animation-duration: 2s; }
   body .contenedorFormContacto {
     display: grid;
-    grid-template-columns: 1fr 0,5fr 1fr;
+    grid-template-columns: 1fr 0, 5fr 1fr;
     grid-template-rows: 1fr;
     background-color: #f8ceec;
     background-image: linear-gradient(315deg, #f8ceec 0%, #e5dadaca 74%); }
