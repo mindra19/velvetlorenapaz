@@ -18,7 +18,7 @@ $submit: (
     font-family: 'Barlow Semi Condensed';
     text-transform: uppercase;
     margin: 10px;
-    padding: 0px;
+    padding: 2px;
 
 }
 %alineacion{
@@ -31,6 +31,7 @@ $submit: (
 body {
     background-color: $color-form;
     background-image: $color-gradient;
+    width: 100%;
     .logo{
         display: flex;
         justify-content: center;
@@ -45,7 +46,9 @@ body {
     }
     .nav-link:hover{
         transform: scale(1.1);
-        box-shadow: 0px 15px 10px -5px rgba(85, 84, 84, 0.386);
+        //box-shadow: 0px 15px 10px -5px rgba(85, 84, 84, 0.386);
+        box-shadow: 0 10px 10px -5px rgba(85, 84, 84, 0.286);
+
     }
     .wppDiv {
         display: inline-block;
@@ -66,9 +69,8 @@ body {
         .collectionNew {
             grid-column: 3 / 4;
             grid-row: 1 / 2;
-            justify-content: center;
-            text-align: center;
             .tituloNew {
+                text-align: center;
                 text-transform: uppercase;
                 font-family: 'Barlow Semi Condensed';
                 font-size: 30px;
@@ -86,6 +88,7 @@ body {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
+
                 .imgIndex{
                     width: 30%;
                     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
@@ -115,6 +118,13 @@ body {
         .bannerSale{
             grid-column: 1 / 6;
             grid-row: 4 / 5;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            .imgSale{
+                width: 100%;
+                
+            }
         }
     }
     .descuentoDiv{
@@ -139,29 +149,39 @@ body {
         justify-content: center;
         border: solid 1px black;
         background: white;
-        .coleccionItems{
-           border-right: solid 1px black;
-           .leftBorder{
-            border-left: solid 1px black;
-           }
-           .itemTexto{
-            text-decoration:none; 
-            text-align:center;
-            text-transform: uppercase;
-            color: black;
-            font-family:  'Barlow Semi Condensed';
-            font-size:larger;
-            border-top: solid 1px black;
-            padding: 5px;
-            margin: 0px;
-           }
-           .itemLink{
-               text-decoration: none;
-           }
-           .infoItems:hover{
-            transition: 0,05s;
-            transform:translate(0, -10px);
+        .itemCamperas{
+            border-right: solid black 1px;
         }
+        .coleccionItems{
+            border-right: solid 1px black;
+            .itemImagenUno{
+                border-left: solid 1px black;   
+            }
+           .itemImagen{
+            border-left: solid 1px black;
+            .imgItem{
+                border-top: solid 1px black;
+            }
+            .infoItems:hover{
+                transition: 0,05s;
+                transform:translate(0, -10px);
+                }
+            .itemTexto{
+                text-decoration:none; 
+                text-align:center;
+                text-transform: uppercase;
+                color: black;
+                font-family:  'Barlow Semi Condensed';
+                font-size:larger;
+                border-top: solid 1px black;
+                padding: 5px;
+                margin: 0px;
+               }
+               .itemLink{
+                   text-decoration: none;
+               }
+            }
+            
         }
     }
 
@@ -216,36 +236,29 @@ body {
             }
             .itemUno{
                 grid-column: 1 / 1;
-                
                 display: flex;
                 .precioNuevo{   
                     color: rgb(93, 85, 85);
                     font-style: italic;
                 }
-               
             }
             .itemDos{
                 grid-column: 1 / 1;
-                
                 display: flex;
                 .precioNuevo{   
                     color: rgb(93, 85, 85);
                     font-style: italic;
                 }
-               
             }
             .itemTres{
                 grid-column: 1 / 1;
                 display: flex;
-                
                 .precioNuevo{   
                     color: rgb(93, 85, 85);
                     font-style: italic;
                 }
             }
         }
-     
-       
     }    
     //sale
     .titulo{
@@ -258,22 +271,12 @@ body {
         font-family: 'Barlow Semi Condensed';
         text-transform: uppercase;
         font-size: 28px;
-        
     }
     .carrusel{
         display: flex;
         justify-content: center;
         background-color: whitesmoke;
         border-bottom: solid 1px black;
-    }
-    .card {
-        margin-top: 100px;
-        margin-right: 25px;
-        margin-left: 22px;
-        .btn{
-            background-color: black;
-            border: none;
-        }
     }
     .infoNuevo{
         background-color: white;
@@ -303,6 +306,7 @@ body {
             border-bottom: solid 1px black;
             .descuento{
                 font-size: 65px;
+                text-align: center;
                 text-transform: uppercase;
                 font-family: 'Barlow Semi Condensed';
                 font-weight: 1000;
@@ -419,25 +423,88 @@ body {
     }
 }
     //media queries
-@media only screen and (max-width:1024px) {
-   .menu{
-       justify-content: center;  
-   }
-    .imgSale{
-        width: 100%;
-    }
-    .wppDiv{
-        visibility: hidden;
-    }
-    .imgTablet{
-        border-top: solid 1px black;
-    }
-    .enlacesTablet{
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-    .descuento{
-        text-align: center;
+@media (min-width:320px) and (max-width:480px) {  
+    body{
+        .wppDiv{
+            visibility: hidden;
+        }
+        .collection{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            padding-bottom: 0px;
+            .collectionNew {
+                grid-column: 1 / 2;
+                
+               
+                .tituloNew {
+                    font-size: 25px;
+                    margin-top: 30px;
+                    padding-bottom: 0px;
+                }
+            }
+            .img {
+                grid-column: 1 / 2;
+                
+                .new {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    row-gap: 25px;
+                    .imgIndex{
+                        width: 80%;
+                    }  
+                }  
+            }
+            .contenedor {
+                grid-column: 1/ 2;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                .more{
+                    padding: 20px;
+                 
+                }
+                
+            }
+            .bannerSale{
+                grid-column: 1 / 2;
+                display: flex;
+                flex-direction: column;
+                align-items: center;    
+            }
+        }
+        .enlacesMedia{
+            row-gap: 20px;
+        }
+        .itemUno{
+            display: flex;
+            flex-direction: column;
+        }
+        .itemDos{
+            display: flex;
+            flex-direction: column;
+        }
+        .itemTres{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .titulo{
+            padding: 12px;
+            font-size: 20px;
+        }
+        .carrusel{
+           
+        }
+        .contenedorDescuento{
+            .bannerDescuento{
+                
+                padding: 20px;
+                .descuento{
+                    font-size: 18px; 
+                }
+            }
+        }
     }
 }

@@ -75,16 +75,21 @@
   </div>
   
     <main class="row carrusel">
-        <div id="carouselExampleControls" class="carruselMain carousel slide col-6" data-bs-ride="carousel" data-interval="3">
+        <div id="carouselExampleControls" class="carruselMain carousel carousel-dark slide " data-bs-ride="carousel" data-interval="3" data-bs-keyboard="true" data-bs-touch="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleControls"  data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
             <div class="carousel-inner carruselDiv">
               <div class="carousel-item active">
-                <img src="../img/girl-with-red-hat-.jpg" class="d-block w-100" alt="imagen 1 carrusel">
+                <img src="../img/girl-with-red-hat-.jpg" class="d-block  w-100 " alt="imagen 1 carrusel">
               </div>
               <div class="carousel-item">
-                <img src="../img/sniejana.jpg" class="d-block w-100 h-80" alt="imagen 2 carrusel">
+                <img src="../img/sniejana.jpg" class="d-block  w-100 " alt="imagen 2 carrusel">
               </div>
               <div class="carousel-item">
-                <img src="../img/rocknwool.jpg" class="d-block w-100" alt="imagen 3 carrusel">
+                <img src="../img/rocknwool.jpg" class="d-block w-100 " alt="imagen 3 carrusel">
               </div>
             </div>
             <button class="carousel-control-prev carsbotton-left" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -224,7 +229,7 @@
       </section>
 
       <section class="Enlaces">
-        <div class="row enlacesTablet">
+        <div class="row enlacesMedia">
           <div class="col-lg-7 col-md-4  ">
             <h5 class="text-uppercase fs-6">Contactanos</h5>
             <ul class="list-unstyled mb-0">
