@@ -95,8 +95,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: solid 1px black;
-    background: white; }
+    background: white;
+    padding-top: 10px; }
     body .contenedorItems .itemCamperas {
       border-right: solid black 1px; }
     body .contenedorItems .coleccionItems {
@@ -109,7 +109,8 @@ body {
           border-top: solid 1px black; }
         body .contenedorItems .coleccionItems .itemImagen .infoItems:hover {
           transition: 0,05s;
-          transform: translate(0, -10px); }
+          transform: translate(0, -10px);
+          background: white; }
         body .contenedorItems .coleccionItems .itemImagen .itemTexto {
           text-decoration: none;
           text-align: center;
@@ -329,8 +330,12 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: end; }
-      body .collection .contenedor .more {
-        padding: 20px; }
+      body .collection .contenedor .mas {
+        text-decoration: none;
+        margin-top: 60px; }
+        body .collection .contenedor .mas .more {
+          text-decoration: underline;
+          border-bottom: none; }
     body .collection .bannerSale {
       grid-column: 1 / 2;
       display: flex;

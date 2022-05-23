@@ -146,8 +146,9 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        border: solid 1px black;
+        //border: solid 1px black;
         background: white;
+        padding-top: 10px;
         .itemCamperas{
             border-right: solid black 1px;
         }
@@ -164,6 +165,7 @@ body {
             .infoItems:hover{
                 transition: 0,05s;
                 transform:translate(0, -10px);
+                background: white;
                 }
             .itemTexto{
                 text-decoration:none; 
@@ -457,10 +459,14 @@ body {
                 display: flex;
                 flex-direction: column;
                 justify-content: end;
-                .more{
-                    padding: 20px;
+                .mas{
+                    text-decoration: none;
+                    margin-top: 60px; 
+                    .more {
+                        text-decoration: underline;
+                        border-bottom: none;        
+                    }
                 }
-                
             }
             .bannerSale{
                 grid-column: 1 / 2;
