@@ -18,7 +18,7 @@ body {
     padding: 2px; }
   body .nav-link:hover {
     transform: scale(1.1);
-    box-shadow: 0 10px 10px -5px rgba(85, 84, 84, 0.286); }
+    border-bottom: solid 1px black; }
   body .collection {
     display: grid;
     grid-template-columns: 5% 30% 30% 30% 5%;
