@@ -295,7 +295,7 @@ body {
   body .btnicon {
     border-radius: 50%; }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 767px) {
   body .wppDiv {
     visibility: hidden; }
   body .collection {
@@ -373,3 +373,7 @@ body {
           flex-direction: column;
           padding: 8px;
           margin-top: 20px; } }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body .wppDiv {
+    visibility: hidden; } }
