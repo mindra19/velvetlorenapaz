@@ -222,15 +222,13 @@ body {
         animation-duration: 2s; }
   body .contenedorFormContacto {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 0,5fr 1fr;
     grid-template-rows: 1fr;
     background-color: #f8ceec;
     background-image: linear-gradient(315deg, #f8ceec 0%, #e5dadaca 74%); }
     body .contenedorFormContacto .form {
       grid-column: 1/2;
-      display: flex;
-      justify-content: center;
-      padding: 20px 30px 50px 0px;
+      padding: 20px 0px 50px 0px;
       font-family: 'Barlow Semi Condensed'; }
       body .contenedorFormContacto .form li {
         list-style: none;
@@ -245,7 +243,7 @@ body {
           display: flex;
           margin-top: 5px;
           padding: 10px;
-          width: 400px;
+          width: 100%;
           border: black 1px solid;
           color: black; }
         body .contenedorFormContacto .form li .submit {
@@ -258,7 +256,8 @@ body {
     body .contenedorFormContacto .contenedorContacto {
       display: flex;
       justify-content: center;
-      grid-column: 2/3; }
+      grid-column: 3/4;
+      margin-right: 100px; }
       body .contenedorFormContacto .contenedorContacto .contacto {
         width: 100%; }
         body .contenedorFormContacto .contenedorContacto .contacto .telefonoWpp {
@@ -350,4 +349,29 @@ body {
   body .contenedorDescuento .bannerDescuento {
     padding: 20px; }
     body .contenedorDescuento .bannerDescuento .descuento {
-      font-size: 18px; } }
+      font-size: 18px; }
+  body .contenedorFormContacto {
+    display: flex;
+    flex-direction: column; }
+    body .contenedorFormContacto .form {
+      padding: 20px; }
+      body .contenedorFormContacto .form .ulForm {
+        padding: 0px; }
+        body .contenedorFormContacto .form .ulForm .text {
+          margin: 0px; }
+    body .contenedorFormContacto .contenedorContacto {
+      display: flex;
+      justify-content: center;
+      margin-right: 0px;
+      padding: 20px; }
+      body .contenedorFormContacto .contenedorContacto .contacto {
+        width: 100%; }
+        body .contenedorFormContacto .contenedorContacto .contacto .newslettersEmail {
+          padding: 10px;
+          margin-right: 0px;
+          width: 100%; }
+        body .contenedorFormContacto .contenedorContacto .contacto .newslettersEnviar {
+          display: flex;
+          flex-direction: column;
+          padding: 8px;
+          margin-top: 20px; } }

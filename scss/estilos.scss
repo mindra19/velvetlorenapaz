@@ -323,18 +323,15 @@ body {
     //contacto
     .contenedorFormContacto{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 0,5fr 1fr;
         grid-template-rows: 1fr;
         background-color: $color-form;
         background-image: $color-gradient2;
        
         .form{
             grid-column: 1/2;
-            display: flex;
-            justify-content: center;
-            padding: 20px 30px 50px 0px;
+            padding: 20px 0px 50px 0px;
             font-family: 'Barlow Semi Condensed';
-            
             li{
                 list-style: none;
                 padding: 5px;
@@ -349,7 +346,7 @@ body {
                     display: flex;
                     margin-top: 5px;
                     padding: 10px;
-                    width: 400px;
+                    width: 100%;
                     border: black 1px solid;
                     color: black;
                 }
@@ -368,9 +365,11 @@ body {
         .contenedorContacto{
             display: flex;
             justify-content: center;
-            grid-column: 2/3;
+            grid-column: 3/4;
+            margin-right: 100px;
             .contacto{
                 width: 100%;
+                
                 .telefonoWpp{
                     font-family: 'Barlow Semi Condensed';
                     border-bottom: solid 1px black;
@@ -393,7 +392,7 @@ body {
                     }
                     .newslettersEmail{
                         text-decoration: none;
-                        font-family:'Barlow Semi Condensed' ;
+                        font-family:'Barlow Semi Condensed';
                         text-transform: uppercase;
                         padding: 8px 200px 8px 5px;
                         margin-right: 20px;
@@ -494,17 +493,46 @@ body {
             padding: 12px;
             font-size: 20px;
         }
-        .carrusel{
-           
-        }
         .contenedorDescuento{
             .bannerDescuento{
-                
                 padding: 20px;
                 .descuento{
                     font-size: 18px; 
                 }
             }
         }
+        .contenedorFormContacto{
+            display: flex;
+            flex-direction: column;
+            .form{
+                padding: 20px;
+                .ulForm{
+                    padding: 0px;
+                    .text{
+                        margin: 0px;
+                    }
+                }
+            }
+            .contenedorContacto{
+                display: flex;
+                justify-content: center;
+                margin-right: 0px;
+                padding: 20px;
+                .contacto{
+                    width: 100%;
+                    .newslettersEmail{
+                        padding: 10px;
+                        margin-right: 0px;
+                        width: 100%;
+                    }
+                    .newslettersEnviar{
+                        display: flex;
+                        flex-direction: column;
+                        padding: 8px;
+                        margin-top: 20px;      
+                    }
+                }
+            }
+        }    
     }
 }
