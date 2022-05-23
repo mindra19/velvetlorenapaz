@@ -32,6 +32,7 @@ body {
     background-color: $color-form;
     background-image: $color-gradient;
     width: 100%;
+    contain: layout;
     .logo{
         display: flex;
         justify-content: center;
@@ -563,5 +564,30 @@ body {
             }
         }   
   
+    }
+}
+@media (min-width:871px) and (max-width:1161px){
+    .seccionesItems{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: solid 1px black;
+        background: white;
+        .contenedorItems{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            .coleccionItems{
+                .teamUno{
+                    grid-column: 1 / 2;
+                    grid-row: 1 / 2;
+                }
+                .teamDos{
+                    grid-column: 1 / 3;
+                    grid-row: 2 / 3;
+                }
+            }
+        }
+
     }
 }
