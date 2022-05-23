@@ -19,13 +19,6 @@ body {
   body .nav-link:hover {
     transform: scale(1.1);
     box-shadow: 0 10px 10px -5px rgba(85, 84, 84, 0.286); }
-  body .wppDiv {
-    display: inline-block;
-    position: fixed;
-    margin: 10px;
-    padding: 5px;
-    left: 93%;
-    bottom: 5px; }
   body .collection {
     display: grid;
     grid-template-columns: 5% 30% 30% 30% 5%;
@@ -300,8 +293,6 @@ body {
     border-radius: 50%; }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  body .wppDiv {
-    visibility: hidden; }
   body .nav-link:hover {
     transform: none;
     box-shadow: none;
@@ -386,8 +377,6 @@ body {
           margin-top: 20px; } }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  body .wppDiv {
-    visibility: hidden; }
   body .nav-link:hover {
     transform: none;
     box-shadow: none;
