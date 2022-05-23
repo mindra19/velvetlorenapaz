@@ -3,408 +3,593 @@ body {
   background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
   width: 100%;
   contain: layout;
-  /*index nueva coleccion*/ }
-  body .logo {
-    display: flex;
-    justify-content: center;
-    padding: 0%;
-    border-bottom: solid 1px black; }
-    body .logo .logoImg {
-      width: 120px; }
-  body .nav-link {
-    font-family: 'Barlow Semi Condensed';
-    text-transform: uppercase;
-    margin: 10px;
-    padding: 2px; }
-  body .nav-link:hover {
-    transform: scale(1.1);
-    box-shadow: 0 10px 10px -5px rgba(85, 84, 84, 0.286); }
-  body .wppDiv {
-    display: inline-block;
-    position: fixed;
-    margin: 10px;
-    padding: 5px;
-    left: 93%;
-    bottom: 5px; }
-  body .collection {
-    display: grid;
-    grid-template-columns: 5% 30% 30% 30% 5%;
-    grid-template-rows: 5% 35% 5% 55%;
-    background-color: #F8CEEC; }
-    body .collection .collectionNew {
-      grid-column: 3 / 4;
-      grid-row: 1 / 2; }
-      body .collection .collectionNew .tituloNew {
-        text-align: center;
-        text-transform: uppercase;
-        font-family: 'Barlow Semi Condensed';
-        font-size: 30px;
-        color: #181717;
-        margin-top: 30px;
-        padding-bottom: 50px; }
-    body .collection .img {
-      grid-column: 2 / 5;
-      grid-row: 2 / 3;
-      margin-top: 50px; }
-      body .collection .img .new {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around; }
-        body .collection .img .new .imgIndex {
-          width: 30%;
-          box-shadow: #26394d 0px 20px 30px -10px; }
-        body .collection .img .new .imgIndex:hover {
-          transition: 0,05s;
-          transform: translate(0, -10px); }
-    body .collection .contenedor {
-      grid-column: 3 / 4;
-      grid-row: 3 / 4;
-      text-align: center;
-      margin-bottom: 10px; }
-      body .collection .contenedor .mas {
-        text-decoration: none; }
-        body .collection .contenedor .mas .more {
-          font-family: 'Barlow Semi Condensed';
-          font-size: 25px;
-          text-transform: uppercase;
-          color: black;
-          border-bottom: solid 1px black;
-          font-weight: 500; }
-    body .collection .bannerSale {
-      grid-column: 1 / 6;
-      grid-row: 4 / 5;
-      display: flex;
-      flex-direction: column;
-      justify-content: end; }
-      body .collection .bannerSale .imgSale {
-        width: 100%; }
-  body .descuentoDiv {
-    display: flex;
-    justify-content: center;
-    color: white;
-    background-color: black;
-    padding: 15px; }
-    body .descuentoDiv .descuentoLink {
-      text-decoration: none;
-      color: white; }
-    body .descuentoDiv .descuentoIndex {
-      border-bottom: solid 2px white;
-      font-family: 'Barlow Semi Condensed';
-      animation-duration: 1,5s; }
-  body .contenedorItems {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background: white;
-    padding-top: 10px; }
-    body .contenedorItems .itemCamperas {
-      border-right: solid black 1px; }
-    body .contenedorItems .coleccionItems {
-      border-right: solid 1px black; }
-      body .contenedorItems .coleccionItems .itemImagenUno {
-        border-left: solid 1px black; }
-      body .contenedorItems .coleccionItems .itemImagen {
-        border-left: solid 1px black; }
-        body .contenedorItems .coleccionItems .itemImagen .imgItem {
-          border-top: solid 1px black; }
-        body .contenedorItems .coleccionItems .itemImagen .infoItems:hover {
-          transition: 0,05s;
-          transform: translate(0, -10px);
-          background: white; }
-        body .contenedorItems .coleccionItems .itemImagen .itemTexto {
-          text-decoration: none;
-          text-align: center;
-          text-transform: uppercase;
-          color: black;
-          font-family: 'Barlow Semi Condensed';
-          font-size: larger;
-          border-top: solid 1px black;
-          padding: 5px;
-          margin: 0px; }
-        body .contenedorItems .coleccionItems .itemImagen .itemLink {
-          text-decoration: none; }
-  body .menu {
-    border-bottom: 1px solid black; }
-  body .contenedorNuevo {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    background-color: white; }
-    body .contenedorNuevo .nuevo {
-      border-right: solid 1px black;
-      background-color: white; }
-      body .contenedorNuevo .nuevo .itemNuevo {
-        border-left: solid 1px black;
-        width: 100%; }
-        body .contenedorNuevo .nuevo .itemNuevo .imgNuevo {
-          width: 100%; }
-        body .contenedorNuevo .nuevo .itemNuevo .infoNuevo:hover {
-          transition: 0,05s;
-          transform: translate(0, -10px); }
-        body .contenedorNuevo .nuevo .itemNuevo .infoNuevo {
-          text-align: center;
-          border-bottom: 1px solid black;
-          padding-bottom: 15px; }
-          body .contenedorNuevo .nuevo .itemNuevo .infoNuevo .nuevoTexto {
-            font-size: 18px;
-            font-family: 'Barlow Semi Condensed';
-            text-transform: uppercase;
-            border-top: solid 1px black;
-            margin: 0px; }
-          body .contenedorNuevo .nuevo .itemNuevo .infoNuevo .botonP {
-            text-decoration: none;
-            color: white;
-            border: solid 1px black;
-            padding: 10px;
-            bottom: 5px;
-            background-color: black;
-            font-family: 'Barlow Semi Condensed';
-            text-transform: uppercase; }
-      body .contenedorNuevo .nuevo .itemUno {
-        grid-column: 1 / 1;
-        display: flex; }
-        body .contenedorNuevo .nuevo .itemUno .precioNuevo {
-          color: #5d5555;
-          font-style: italic; }
-      body .contenedorNuevo .nuevo .itemDos {
-        grid-column: 1 / 1;
-        display: flex; }
-        body .contenedorNuevo .nuevo .itemDos .precioNuevo {
-          color: #5d5555;
-          font-style: italic; }
-      body .contenedorNuevo .nuevo .itemTres {
-        grid-column: 1 / 1;
-        display: flex; }
-        body .contenedorNuevo .nuevo .itemTres .precioNuevo {
-          color: #5d5555;
-          font-style: italic; }
-  body .titulo {
-    text-align: center;
-    background-color: #F8CEEC;
-    padding: 20px;
-    color: black;
-    margin: 0px;
-    border-bottom: solid 1px black;
-    font-family: 'Barlow Semi Condensed';
-    text-transform: uppercase;
-    font-size: 28px; }
-  body .carrusel {
-    display: flex;
-    justify-content: center;
-    background-color: whitesmoke;
-    border-bottom: solid 1px black; }
-  body .infoNuevo {
-    background-color: white; }
-    body .infoNuevo .tachado {
-      text-decoration: line-through;
-      font-family: 'Barlow Semi Condensed';
-      font-style: italic;
-      font-size: 18px;
-      font-weight: 900; }
-    body .infoNuevo .precioColor {
-      color: red;
-      font-family: 'Barlow Semi Condensed';
-      font-style: italic;
-      font-weight: 900;
-      font-size: 20px; }
-  body .contenedorDescuento {
-    display: inline; }
-    body .contenedorDescuento .bannerDescuento {
-      display: flex;
-      justify-content: center;
-      background-color: black;
-      padding: 35px;
-      border-bottom: solid 1px black; }
-      body .contenedorDescuento .bannerDescuento .descuento {
-        font-size: 65px;
-        text-align: center;
-        text-transform: uppercase;
-        font-family: 'Barlow Semi Condensed';
-        font-weight: 1000;
-        font-style: italic;
-        color: white;
-        animation-duration: 2s; }
-  body .contenedorFormContacto {
-    display: grid;
-    grid-template-columns: 1fr 0,5fr 1fr;
-    grid-template-rows: 1fr;
-    background-color: #f8ceec;
-    background-image: linear-gradient(315deg, #f8ceec 0%, #e5dadaca 74%); }
-    body .contenedorFormContacto .form {
-      grid-column: 1/2;
-      padding: 20px 0px 50px 0px;
-      font-family: 'Barlow Semi Condensed'; }
-      body .contenedorFormContacto .form li {
-        list-style: none;
-        padding: 5px;
-        margin: 5px; }
-        body .contenedorFormContacto .form li label {
-          font-size: 20px;
-          text-transform: uppercase;
-          padding-right: 5px;
-          color: black; }
-        body .contenedorFormContacto .form li .text {
-          display: flex;
-          margin-top: 5px;
-          padding: 10px;
-          width: 100%;
-          border: black 1px solid;
-          color: black; }
-        body .contenedorFormContacto .form li .submit {
-          padding: 15px 30px;
-          text-transform: uppercase;
-          background-color: black;
-          color: white;
-          border: black 1px solid;
-          font-size: 15px; }
-    body .contenedorFormContacto .contenedorContacto {
-      display: flex;
-      justify-content: center;
-      grid-column: 3/4;
-      margin-right: 100px; }
-      body .contenedorFormContacto .contenedorContacto .contacto {
-        width: 100%; }
-        body .contenedorFormContacto .contenedorContacto .contacto .telefonoWpp {
-          font-family: 'Barlow Semi Condensed';
-          border-bottom: solid 1px black;
-          text-transform: uppercase;
-          padding: 30px 0px 10px 0px;
-          color: black; }
-        body .contenedorFormContacto .contenedorContacto .contacto .atencionDiv {
-          font-family: 'Barlow Semi Condensed';
-          text-transform: uppercase; }
-          body .contenedorFormContacto .contenedorContacto .contacto .atencionDiv .horario {
-            padding: 10px 0px;
-            font-size: 20px;
-            color: black; }
-          body .contenedorFormContacto .contenedorContacto .contacto .atencionDiv .numero {
-            text-decoration: none;
-            color: rgba(43, 42, 42, 0.8);
-            font-size: 20px; }
-          body .contenedorFormContacto .contenedorContacto .contacto .atencionDiv .newslettersEmail {
-            text-decoration: none;
-            font-family: 'Barlow Semi Condensed';
-            text-transform: uppercase;
-            padding: 8px 200px 8px 5px;
-            margin-right: 20px;
-            border: solid 1px black; }
-          body .contenedorFormContacto .contenedorContacto .contacto .atencionDiv .newslettersEnviar {
-            text-decoration: none;
-            font-family: 'Barlow Semi Condensed';
-            text-transform: uppercase;
-            border: solid 1px black;
-            padding: 8px;
-            background-color: black;
-            color: white; }
-  body .btnicon {
-    border-radius: 50%; }
+  /*index nueva coleccion*/
+}
+
+body .logo {
+  display: flex;
+  justify-content: center;
+  padding: 0%;
+  border-bottom: solid 1px black;
+}
+
+body .logo .logoImg {
+  width: 120px;
+}
+
+body .nav-link {
+  font-family: 'Barlow Semi Condensed';
+  text-transform: uppercase;
+  margin: 10px;
+  padding: 2px;
+}
+
+body .nav-link:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 10px -5px rgba(85, 84, 84, 0.286);
+}
+
+body .wppDiv {
+  display: inline-block;
+  position: fixed;
+  margin: 10px;
+  padding: 5px;
+  left: 93%;
+  bottom: 5px;
+}
+
+body .collection {
+  display: grid;
+  grid-template-columns: 5% 30% 30% 30% 5%;
+  grid-template-rows: 5% 35% 5% 55%;
+  background-color: #F8CEEC;
+}
+
+body .collection .collectionNew {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+
+body .collection .collectionNew .tituloNew {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Barlow Semi Condensed';
+  font-size: 30px;
+  color: #181717;
+  margin-top: 30px;
+  padding-bottom: 50px;
+}
+
+body .collection .img {
+  grid-column: 2 / 5;
+  grid-row: 2 / 3;
+  margin-top: 50px;
+}
+
+body .collection .img .new {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+body .collection .img .new .imgIndex {
+  width: 30%;
+  box-shadow: #26394d 0px 20px 30px -10px;
+}
+
+body .collection .img .new .imgIndex:hover {
+  transition: 0, 05s;
+  transform: translate(0, -10px);
+}
+
+body .collection .contenedor {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+body .collection .contenedor .mas {
+  text-decoration: none;
+}
+
+body .collection .contenedor .mas .more {
+  font-family: 'Barlow Semi Condensed';
+  font-size: 25px;
+  text-transform: uppercase;
+  color: black;
+  border-bottom: solid 1px black;
+  font-weight: 500;
+}
+
+body .collection .bannerSale {
+  grid-column: 1 / 6;
+  grid-row: 4 / 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+body .collection .bannerSale .imgSale {
+  width: 100%;
+}
+
+body .descuentoDiv {
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color: black;
+  padding: 15px;
+}
+
+body .descuentoDiv .descuentoLink {
+  text-decoration: none;
+  color: white;
+}
+
+body .descuentoDiv .descuentoIndex {
+  border-bottom: solid 2px white;
+  font-family: 'Barlow Semi Condensed';
+  animation-duration: 1, 5s;
+}
+
+body .contenedorItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: white;
+  padding-top: 10px;
+}
+
+body .contenedorItems .coleccionItems {
+  border: solid 1px black;
+}
+
+body .contenedorItems .coleccionItems .infoItems:hover {
+  transition: 0, 05s;
+  transform: translate(0, -10px);
+  background: white;
+}
+
+body .contenedorItems .coleccionItems .itemLink {
+  text-decoration: none;
+}
+
+body .contenedorItems .coleccionItems .itemLink .itemTexto {
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  font-family: 'Barlow Semi Condensed';
+  font-size: larger;
+  border-top: solid 1px black;
+  padding: 5px;
+  margin: 0px;
+}
+
+body .menu {
+  border-bottom: 1px solid black;
+}
+
+body .contenedorNuevo {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background-color: white;
+}
+
+body .contenedorNuevo .nuevo {
+  border-right: solid 1px black;
+  background-color: white;
+}
+
+body .contenedorNuevo .nuevo .itemNuevo {
+  border-left: solid 1px black;
+  width: 100%;
+}
+
+body .contenedorNuevo .nuevo .itemNuevo .imgNuevo {
+  width: 100%;
+}
+
+body .contenedorNuevo .nuevo .itemNuevo .infoNuevo:hover {
+  transition: 0, 05s;
+  transform: translate(0, -10px);
+}
+
+body .contenedorNuevo .nuevo .itemNuevo .infoNuevo {
+  text-align: center;
+  border-bottom: 1px solid black;
+  padding-bottom: 15px;
+}
+
+body .contenedorNuevo .nuevo .itemNuevo .infoNuevo .nuevoTexto {
+  font-size: 18px;
+  font-family: 'Barlow Semi Condensed';
+  text-transform: uppercase;
+  border-top: solid 1px black;
+  margin: 0px;
+}
+
+body .contenedorNuevo .nuevo .itemNuevo .infoNuevo .botonP {
+  text-decoration: none;
+  color: white;
+  border: solid 1px black;
+  padding: 10px;
+  bottom: 5px;
+  background-color: black;
+  font-family: 'Barlow Semi Condensed';
+  text-transform: uppercase;
+}
+
+body .contenedorNuevo .nuevo .itemUno {
+  grid-column: 1 / 1;
+  display: flex;
+}
+
+body .contenedorNuevo .nuevo .itemUno .precioNuevo {
+  color: #5d5555;
+  font-style: italic;
+}
+
+body .contenedorNuevo .nuevo .itemDos {
+  grid-column: 1 / 1;
+  display: flex;
+}
+
+body .contenedorNuevo .nuevo .itemDos .precioNuevo {
+  color: #5d5555;
+  font-style: italic;
+}
+
+body .contenedorNuevo .nuevo .itemTres {
+  grid-column: 1 / 1;
+  display: flex;
+}
+
+body .contenedorNuevo .nuevo .itemTres .precioNuevo {
+  color: #5d5555;
+  font-style: italic;
+}
+
+body .titulo {
+  text-align: center;
+  background-color: #F8CEEC;
+  padding: 20px;
+  color: black;
+  margin: 0px;
+  border-bottom: solid 1px black;
+  font-family: 'Barlow Semi Condensed';
+  text-transform: uppercase;
+  font-size: 28px;
+}
+
+body .carrusel {
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+  border-bottom: solid 1px black;
+}
+
+body .infoNuevo {
+  background-color: white;
+}
+
+body .infoNuevo .tachado {
+  text-decoration: line-through;
+  font-family: 'Barlow Semi Condensed';
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+body .infoNuevo .precioColor {
+  color: red;
+  font-family: 'Barlow Semi Condensed';
+  font-style: italic;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+body .contenedorDescuento {
+  display: inline;
+}
+
+body .contenedorDescuento .bannerDescuento {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 35px;
+  border-bottom: solid 1px black;
+}
+
+body .contenedorDescuento .bannerDescuento .descuento {
+  font-size: 65px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Barlow Semi Condensed';
+  font-weight: 1000;
+  font-style: italic;
+  color: white;
+  animation-duration: 2s;
+}
+
+body .contenedorFormContacto {
+  display: grid;
+  grid-template-columns: 1fr 0, 5fr 1fr;
+  grid-template-rows: 1fr;
+  background-color: #f8ceec;
+  background-image: linear-gradient(315deg, #f8ceec 0%, #e5dadaca 74%);
+}
+
+body .contenedorFormContacto .form {
+  grid-column: 1/2;
+  padding: 20px 0px 50px 0px;
+  font-family: 'Barlow Semi Condensed';
+}
+
+body .contenedorFormContacto .form li {
+  list-style: none;
+  padding: 5px;
+  margin: 5px;
+}
+
+body .contenedorFormContacto .form li label {
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-right: 5px;
+  color: black;
+}
+
+body .contenedorFormContacto .form li .text {
+  display: flex;
+  margin-top: 5px;
+  padding: 10px;
+  width: 100%;
+  border: black 1px solid;
+  color: black;
+}
+
+body .contenedorFormContacto .form li .submit {
+  padding: 15px 30px;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  border: black 1px solid;
+  font-size: 15px;
+}
+
+body .contenedorFormContacto .contenedorContacto {
+  display: flex;
+  justify-content: center;
+  grid-column: 3/4;
+  margin-right: 100px;
+}
+
+body .contenedorFormContacto .contenedorContacto .contacto {
+  width: 100%;
+}
+
+body .contenedorFormContacto .contenedorContacto .contacto .telefonoWpp {
+  font-family: 'Barlow Semi Condensed';
+  border-bottom: solid 1px black;
+  text-transform: uppercase;
+  padding: 30px 0px 10px 0px;
+  color: black;
+}
+
+body .contenedorFormContacto .contenedorContacto .contacto .atencionDiv {
+  font-family: 'Barlow Semi Condensed';
+  text-transform: uppercase;
+}
+
+body .contenedorFormContacto .contenedorContacto .contacto .atencionDiv .horario {
+  padding: 10px 0px;
+  font-size: 20px;
+  color: black;
+}
+
+body .contenedorFormContacto .contenedorContacto .contacto .atencionDiv .numero {
+  text-decoration: none;
+  color: rgba(43, 42, 42, 0.8);
+  font-size: 20px;
+}
+
+body .contenedorFormContacto .contenedorContacto .contacto .atencionDiv .newslettersEmail {
+  text-decoration: none;
+  font-family: 'Barlow Semi Condensed';
+  text-transform: uppercase;
+  padding: 8px 200px 8px 5px;
+  margin-right: 20px;
+  border: solid 1px black;
+}
+
+body .contenedorFormContacto .contenedorContacto .contacto .atencionDiv .newslettersEnviar {
+  text-decoration: none;
+  font-family: 'Barlow Semi Condensed';
+  text-transform: uppercase;
+  border: solid 1px black;
+  padding: 8px;
+  background-color: black;
+  color: white;
+}
+
+body .btnicon {
+  border-radius: 50%;
+}
 
 @media (min-width: 320px) and (max-width: 767px) {
   body .wppDiv {
-    visibility: hidden; }
+    visibility: hidden;
+  }
+
   body .nav-link:hover {
     transform: none;
     box-shadow: none;
-    border-bottom: solid 1px black; }
+    border-bottom: solid 1px black;
+  }
+
   body .collection {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr; }
-    body .collection .collectionNew {
-      grid-column: 1 / 2; }
-      body .collection .collectionNew .tituloNew {
-        font-size: 25px;
-        margin-top: 30px;
-        padding-bottom: 0px; }
-    body .collection .img {
-      grid-column: 1 / 2; }
-      body .collection .img .new {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        row-gap: 25px; }
-        body .collection .img .new .imgIndex {
-          width: 80%; }
-    body .collection .contenedor {
-      grid-column: 1/ 2;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: end; }
-      body .collection .contenedor .mas {
-        text-decoration: none;
-        margin-top: 60px; }
-        body .collection .contenedor .mas .more {
-          text-decoration: underline;
-          border-bottom: none; }
-    body .collection .bannerSale {
-      grid-column: 1 / 2;
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
+    grid-template-rows: 1fr;
+  }
+
+  body .collection .collectionNew {
+    grid-column: 1 / 2;
+  }
+
+  body .collection .collectionNew .tituloNew {
+    font-size: 25px;
+    margin-top: 30px;
+    padding-bottom: 0px;
+  }
+
+  body .collection .img {
+    grid-column: 1 / 2;
+  }
+
+  body .collection .img .new {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+  }
+
+  body .collection .img .new .imgIndex {
+    width: 80%;
+  }
+
+  body .collection .contenedor {
+    grid-column: 1/ 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  body .collection .contenedor .mas {
+    text-decoration: none;
+    margin-top: 60px;
+  }
+
+  body .collection .contenedor .mas .more {
+    text-decoration: underline;
+    border-bottom: none;
+  }
+
+  body .collection .bannerSale {
+    grid-column: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   body .enlacesMedia {
-    row-gap: 20px; }
+    row-gap: 20px;
+  }
+
   body .itemUno {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+  }
+
   body .itemDos {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+  }
+
   body .itemTres {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+  }
+
   body .titulo {
     padding: 12px;
-    font-size: 20px; }
+    font-size: 20px;
+  }
+
   body .contenedorDescuento .bannerDescuento {
-    padding: 20px; }
-    body .contenedorDescuento .bannerDescuento .descuento {
-      font-size: 18px; }
+    padding: 20px;
+  }
+
+  body .contenedorDescuento .bannerDescuento .descuento {
+    font-size: 18px;
+  }
+
   body .contenedorFormContacto {
     display: flex;
-    flex-direction: column; }
-    body .contenedorFormContacto .form {
-      padding: 20px; }
-      body .contenedorFormContacto .form .ulForm {
-        padding: 0px; }
-        body .contenedorFormContacto .form .ulForm .text {
-          margin: 0px; }
-    body .contenedorFormContacto .contenedorContacto {
-      display: flex;
-      justify-content: center;
-      margin-right: 0px;
-      padding: 20px; }
-      body .contenedorFormContacto .contenedorContacto .contacto {
-        width: 100%; }
-        body .contenedorFormContacto .contenedorContacto .contacto .newslettersEmail {
-          padding: 10px;
-          margin-right: 0px;
-          width: 100%; }
-        body .contenedorFormContacto .contenedorContacto .contacto .newslettersEnviar {
-          display: flex;
-          flex-direction: column;
-          padding: 8px;
-          margin-top: 20px; } }
+    flex-direction: column;
+  }
+
+  body .contenedorFormContacto .form {
+    padding: 20px;
+  }
+
+  body .contenedorFormContacto .form .ulForm {
+    padding: 0px;
+  }
+
+  body .contenedorFormContacto .form .ulForm .text {
+    margin: 0px;
+  }
+
+  body .contenedorFormContacto .contenedorContacto {
+    display: flex;
+    justify-content: center;
+    margin-right: 0px;
+    padding: 20px;
+  }
+
+  body .contenedorFormContacto .contenedorContacto .contacto {
+    width: 100%;
+  }
+
+  body .contenedorFormContacto .contenedorContacto .contacto .newslettersEmail {
+    padding: 10px;
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  body .contenedorFormContacto .contenedorContacto .contacto .newslettersEnviar {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    margin-top: 20px;
+  }
+}
 
 @media (min-width: 768px) and (max-width: 1024px) {
   body .wppDiv {
-    visibility: hidden; }
+    visibility: hidden;
+  }
+
   body .nav-link:hover {
     transform: none;
     box-shadow: none;
-    border-bottom: solid 1px black; }
+    border-bottom: solid 1px black;
+  }
+
   body .contenedorFormContacto .contenedorContacto {
-    margin-right: 0px; }
-    body .contenedorFormContacto .contenedorContacto .contacto {
-      width: 100%; }
-      body .contenedorFormContacto .contenedorContacto .contacto .atencionDiv .newslettersEmail {
-        padding: 8px 0px 8px 5px;
-        margin-right: 0px;
-        width: 80%; }
-      body .contenedorFormContacto .contenedorContacto .contacto .atencionDiv .newslettersEnviar {
-        display: flex;
-        flex-direction: column;
-        padding: 8px;
-        margin-top: 20px; } }
+    margin-right: 0px;
+  }
+
+  body .contenedorFormContacto .contenedorContacto .contacto {
+    width: 100%;
+  }
+
+  body .contenedorFormContacto .contenedorContacto .contacto .atencionDiv .newslettersEmail {
+    padding: 8px 0px 8px 5px;
+    margin-right: 0px;
+    width: 80%;
+  }
+
+  body .contenedorFormContacto .contenedorContacto .contacto .atencionDiv .newslettersEnviar {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    margin-top: 20px;
+  }
+}
 
 @media (min-width: 871px) and (max-width: 1161px) {
   .seccionesItems {
@@ -412,14 +597,22 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     border: solid 1px black;
-    background: white; }
-    .seccionesItems .contenedorItems {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr; }
-      .seccionesItems .contenedorItems .coleccionItems .teamUno {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2; }
-      .seccionesItems .contenedorItems .coleccionItems .teamDos {
-        grid-column: 1 / 3;
-        grid-row: 2 / 3; } }
+    background: white;
+  }
+
+  .seccionesItems .contenedorItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .seccionesItems .contenedorItems .coleccionItems .teamUno {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .seccionesItems .contenedorItems .coleccionItems .teamDos {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+}
